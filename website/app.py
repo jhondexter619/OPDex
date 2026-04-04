@@ -296,23 +296,27 @@ def detect_face_y(card_code: str) -> int:
                         best_area = area
         return best_pct
 
-    # Priority 1: Eye pairs on raw image
-    result = _eye_detect(art_raw)
+    try:
+        # Priority 1: Eye pairs on raw image
+        result = _eye_detect(art_raw)
 
-    # Priority 2: Face cascades on raw image (high confidence: minNeighbors=3)
-    if result is None:
-        result = _face_detect(art_raw, min_neighbors=3)
+        # Priority 2: Face cascades on raw image (high confidence: minNeighbors=3)
+        if result is None:
+            result = _face_detect(art_raw, min_neighbors=3)
 
-    # Priority 3: Preprocessed images (equalized, CLAHE) with relaxed params
-    if result is None:
-        clahe_obj = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-        for art_gray in (cv2.equalizeHist(art_raw), clahe_obj.apply(art_raw)):
-            result = _eye_detect(art_gray)
-            if result:
-                break
-            result = _face_detect(art_gray, min_neighbors=2)
-            if result:
-                break
+        # Priority 3: Preprocessed images (equalized, CLAHE) with relaxed params
+        if result is None:
+            clahe_obj = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+            for art_gray in (cv2.equalizeHist(art_raw), clahe_obj.apply(art_raw)):
+                result = _eye_detect(art_gray)
+                if result:
+                    break
+                result = _face_detect(art_gray, min_neighbors=2)
+                if result:
+                    break
+    except cv2.error as e:
+        log.warning("OpenCV error for %s: %s", card_code, e)
+        result = None
 
     if result is None:
         result = default
