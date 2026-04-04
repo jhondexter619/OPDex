@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}OPDex &mdash; OPTCG Meta{% endblock %}
+
+{% block hero %}
+<div class="hero-banner hero-meta hero-with-bg">
+    <img class="hero-bg-img" src="/header-image/meta" alt="" loading="eager">
+    <svg class="hero-compass hero-compass-left" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="55" fill="none" stroke="#f85149" stroke-width="1.5"/>
+        <circle cx="60" cy="60" r="45" fill="none" stroke="#f85149" stroke-width="1"/>
+        <circle cx="60" cy="60" r="35" fill="none" stroke="#f85149" stroke-width="0.5" opacity="0.5"/>
+        <line x1="60" y1="5" x2="60" y2="18" stroke="#f85149" stroke-width="1.5"/>
+        <line x1="60" y1="102" x2="60" y2="115" stroke="#f85149" stroke-width="1.5"/>
+        <line x1="5" y1="60" x2="18" y2="60" stroke="#f85149" stroke-width="1.5"/>
+        <line x1="102" y1="60" x2="115" y2="60" stroke="#f85149" stroke-width="1.5"/>
+        <polygon points="60,15 64,60 60,65 56,60" fill="#f85149" opacity="0.6"/>
+        <polygon points="60,105 64,60 60,55 56,60" fill="#a33" opacity="0.3"/>
+        <circle cx="60" cy="60" r="5" fill="#f85149" opacity="0.5"/>
+    </svg>
+    <div class="hero-content">
+        <h1 class="hero-title">Navigate the <span class="accent">Grand Line</span></h1>
+        <p class="hero-subtitle">Track the meta, study top decks, and chart your course to victory in the One Piece TCG.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% if meta.total_decks == 0 %}
+<section class="empty-state">
+    <h1>No Data Yet</h1>
+    <p>Run the scraper to populate OPDex:</p>
+    <pre>python execution/optcg_deck_scraper.py --output website/data/meta.json</pre>
+</section>
+
+{% else %}
+<!-- Hero Stats -->
+<section class="stats-row stagger">
+    <div class="stat-card">
+        <span class="stat-value">{{ meta.total_decks }}</span>
+        <span class="stat-label">Decks Tracked</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">{{ meta.total_archetypes }}</span>
+        <span class="stat-label">Archetypes</span>
+    </div>
+    <div class="stat-card highlight">
+        <span class="stat-value">{{ meta.top5[0].name if meta.top5 else 'N/A' }}</span>
+        <span class="stat-label">Top Archetype</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">{{ meta.top5[0].share if meta.top5 else 0 }}%</span>
+        <span class="stat-label">Meta Share</span>
+    </div>
+</section>
+
+<!-- Top 5 Chart -->
+<section class="section reveal" id="chartSection">
+    <h2>Top 5 Most Used Decks</h2>
+    <div class="chart-container">
+        <canvas id="top5Chart"></canvas>
+    </div>
+</section>
+
+<!-- Archetype Breakdown -->
+<section class="section reveal">
+    <h2>Archetype Breakdown</h2>
+    <div class="archetype-grid stagger">
+        {% for arch in meta.archetypes %}
+        <a href="/archetype/{{ arch.name | urlencode }}" class="archetype-card" data-leader-color="{{ arch.leader_color }}">
+            {% if arch.leader_code %}
+            <img class="arch-bg" src="/card-image/{{ arch.leader_code }}"
+                 alt="" loading="lazy"
+                 style="object-position: center {{ arch.face_y }}%"
+                 onerror="this.style.display='none'">
+            {% endif %}
+            <div class="arch-info">
+                <div class="arch-header">
+                    <span class="arch-name">{{ arch.name }}</span>
+                    <span class="arch-count">{{ arch.count }}</span>
+                </div>
+                <div class="arch-bar-track">
+                    <div class="arch-bar-fill" data-width="{{ arch.share }}"></div>
+                </div>
+                <span class="arch-share">{{ arch.share }}% of meta</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- All Decks -->
+<section class="section reveal">
+    <div class="section-header">
+        <h2>All Deck Profiles</h2>
+        <input type="text" id="deckSearch" class="search-input" placeholder="Search decks, players...">
+    </div>
+    <div class="table-wrapper">
+        <table class="deck-table" id="deckTable">
+            <thead>
+                <tr>
+                    <th>Deck</th>
+                    <th>Player</th>
+                    <th>Placement</th>
+                    <th>Tournament</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody class="stagger-rows">
+                {% for deck in meta.decks %}
+                <tr class="deck-row" onclick="window.location='/deck/{{ loop.index0 }}'">
+                    <td><strong>{{ deck.deck_name }}</strong></td>
+                    <td>{{ deck.player or '&mdash;' }}</td>
+                    <td><span class="placement-badge">{{ deck.placement or '&mdash;' }}</span></td>
+                    <td>{{ deck.tournament or '&mdash;' }}</td>
+                    <td>{{ deck.date or '&mdash;' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if meta.total_decks > 0 %}
+<script>
+    const top5Data = {{ meta.top5 | tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endif %}
+{% endblock %}

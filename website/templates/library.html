@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Deck Library &mdash; OPDex{% endblock %}
+
+{% block hero %}
+<div class="hero-banner hero-library hero-with-bg">
+    <img class="hero-bg-img" src="/header-image/library" alt="" loading="eager">
+    <div class="hero-coin" aria-hidden="true">
+        <svg viewBox="0 0 80 80">
+            <!-- Outer rim -->
+            <circle cx="40" cy="40" r="37" fill="#c8952e" opacity="0.15"/>
+            <circle cx="40" cy="40" r="37" fill="none" stroke="#d4a843" stroke-width="2.5"/>
+            <circle cx="40" cy="40" r="33" fill="none" stroke="#d4a843" stroke-width="1" opacity="0.4"/>
+            <!-- Inner decorative ring -->
+            <circle cx="40" cy="40" r="28" fill="none" stroke="#d4a843" stroke-width="0.75" opacity="0.3" stroke-dasharray="3 3"/>
+            <!-- Berry symbol: B with double vertical strike-through -->
+            <text x="40" y="49" text-anchor="middle" fill="#d4a843" font-size="30" font-weight="900" font-family="serif" letter-spacing="-1">B</text>
+            <line x1="35" y1="18" x2="35" y2="62" stroke="#d4a843" stroke-width="2" opacity="0.7"/>
+            <line x1="41" y1="18" x2="41" y2="62" stroke="#d4a843" stroke-width="2" opacity="0.7"/>
+        </svg>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">Your <span class="accent">Treasure</span> Vault</h1>
+        <p class="hero-subtitle">All your saved decks in one place. Ready to set sail whenever you are.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="library-header reveal">
+    <h1>Deck Library</h1>
+    <p class="library-subtitle">Your saved custom decks</p>
+</section>
+
+<section class="section reveal">
+    <div class="library-grid" id="libraryGrid">
+        <div class="library-empty" id="libraryEmpty">
+            <p>No saved decks yet.</p>
+            <p>Build a deck in the <a href="/builder">Deck Builder</a> and save it here.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox for card zoom -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/library.js') }}"></script>
+{% endblock %}

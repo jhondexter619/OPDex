@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+
+{% block title %}{{ deck.deck_name }} &mdash; OPDex{% endblock %}
+
+{% block hero %}
+<div class="hero-banner hero-detail hero-split" style="--deck-color1: {{ deck_colors[0] }}; --deck-color2: {{ deck_colors[1] }}">
+    <div class="hero-content hero-content-left">
+        <h1 class="hero-detail-title">{{ deck.deck_name }}</h1>
+        <p class="hero-detail-subtitle">Deck profile and matchup breakdown</p>
+    </div>
+    {% if leader_code %}
+    <div class="hero-leader-art">
+        <img src="/card-image/{{ leader_code }}" alt="{{ deck.deck_name }}" loading="eager">
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block content %}
+<a href="/" class="back-link"><span class="back-arrow">&larr;</span> Back to Meta</a>
+
+<section class="deck-header reveal">
+    <h1>{{ deck.deck_name }}</h1>
+    <div class="deck-meta-row">
+        {% if deck.player %}
+        <span class="meta-tag"><strong>Player:</strong> {{ deck.player }}</span>
+        {% endif %}
+        {% if deck.placement %}
+        <span class="meta-tag placement"><strong>Placement:</strong> {{ deck.placement }}</span>
+        {% endif %}
+        {% if deck.tournament %}
+        <span class="meta-tag"><strong>Tournament:</strong> {{ deck.tournament }}</span>
+        {% endif %}
+        {% if deck.date %}
+        <span class="meta-tag"><strong>Date:</strong> {{ deck.date }}</span>
+        {% endif %}
+        {% if deck.country %}
+        <span class="meta-tag"><strong>Country:</strong> {{ deck.country }}</span>
+        {% endif %}
+    </div>
+    <p class="deck-stats">{{ deck.unique_cards }} unique cards &middot; {{ deck.total_cards }} total</p>
+</section>
+
+<section class="deck-actions reveal">
+    <a href="/download-pdf/{{ idx }}" class="btn btn-primary btn-pulse" id="downloadBtn">
+        Download Print-Ready PDF
+    </a>
+    <button class="btn btn-save" id="saveLibraryBtn">
+        &#43; Add to Library
+    </button>
+    <span class="btn-hint">A4 pages &middot; 3&times;3 grid &middot; crop marks included</span>
+</section>
+<div class="save-feedback" id="saveFeedback" style="margin-bottom:1rem;text-align:left;padding-left:0.25rem;"></div>
+
+<!-- Decklist FIRST -->
+<section class="section reveal">
+    <h2>Decklist</h2>
+    <div class="card-grid stagger">
+        {% for card in deck.cards %}
+        <div class="card-item">
+            <div class="card-img-wrapper card-zoomable" data-src="/card-image/{{ card.card_code }}">
+                <img src="/card-image/{{ card.card_code }}"
+                     alt="{{ card.card_code }}"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="card-placeholder" style="display:none;">{{ card.card_code }}</div>
+                <span class="qty-badge">&times;{{ card.quantity }}</span>
+            </div>
+            <span class="card-code">{{ card.card_code }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Matchup BELOW decklist -->
+{% if matchups.threats or matchups.favorable %}
+<section class="section matchup-section reveal">
+    <h2>Matchup Outlook</h2>
+    <p class="matchup-note">Based on average tournament placement across all tracked results.</p>
+    <div class="matchup-grid">
+        {% if matchups.threats %}
+        <div class="matchup-col">
+            <h3 class="matchup-label threats-label">Watch Out For</h3>
+            {% for t in matchups.threats %}
+            <a href="/archetype/{{ t.name | urlencode }}" class="matchup-item threat">
+                {% if t.leader_code %}
+                <div class="matchup-leader">
+                    <img src="/card-image/{{ t.leader_code }}" alt="" loading="lazy"
+                         onerror="this.parentElement.style.display='none'">
+                </div>
+                {% endif %}
+                <div class="matchup-info">
+                    <span class="matchup-name">{{ t.name }}</span>
+                    <span class="matchup-stat">avg {{ t.avg_placement }} &middot; {{ t.count }} decks</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if matchups.favorable %}
+        <div class="matchup-col">
+            <h3 class="matchup-label favorable-label">Favorable Against</h3>
+            {% for f in matchups.favorable %}
+            <a href="/archetype/{{ f.name | urlencode }}" class="matchup-item favorable">
+                {% if f.leader_code %}
+                <div class="matchup-leader">
+                    <img src="/card-image/{{ f.leader_code }}" alt="" loading="lazy"
+                         onerror="this.parentElement.style.display='none'">
+                </div>
+                {% endif %}
+                <div class="matchup-info">
+                    <span class="matchup-name">{{ f.name }}</span>
+                    <span class="matchup-stat">avg {{ f.avg_placement }} &middot; {{ f.count }} decks</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const STORAGE_KEY = 'opdex_library';
+
+    // PDF button
+    const downloadBtn = document.getElementById('downloadBtn');
+    downloadBtn.addEventListener('click', function () {
+        downloadBtn.textContent = 'Generating PDF\u2026';
+        downloadBtn.classList.add('loading');
+        downloadBtn.classList.remove('btn-pulse');
+    });
+
+    // Add full deck to Library
+    const saveLibraryBtn = document.getElementById('saveLibraryBtn');
+    const saveFeedback   = document.getElementById('saveFeedback');
+    const deckData = {
+        name: {{ deck.deck_name | tojson }},
+        cards: [
+            {% for card in deck.cards %}
+            { code: {{ card.card_code | tojson }}, qty: {{ card.quantity }} },
+            {% endfor %}
+        ],
+        totalCards: {{ deck.total_cards }},
+        uniqueCards: {{ deck.unique_cards }},
+        leaderCode: {{ (deck.cards[0].card_code if deck.cards else '') | tojson }},
+    };
+
+    saveLibraryBtn.addEventListener('click', function () {
+        const library = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        const savedDeck = {
+            id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+            name: deckData.name,
+            cards: deckData.cards,
+            totalCards: deckData.totalCards,
+            uniqueCards: deckData.uniqueCards,
+            leaderCode: deckData.leaderCode,
+            savedAt: new Date().toISOString(),
+        };
+        library.unshift(savedDeck);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(library));
+
+        saveFeedback.textContent = '\u2713 "' + deckData.name + '" saved to Library!';
+        saveFeedback.classList.add('visible');
+        setTimeout(() => saveFeedback.classList.remove('visible'), 3000);
+    });
+
+    // Card zoom lightbox
+    const lightbox    = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    document.querySelectorAll('.card-zoomable').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', () => {
+            lightboxImg.src = el.dataset.src;
+            lightbox.classList.add('active');
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        lightboxImg.src = '';
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            lightboxImg.src = '';
+        }
+    });
+</script>
+{% endblock %}

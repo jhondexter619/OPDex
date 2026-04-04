@@ -1,0 +1,30 @@
+dl count=15 first=<dl class="modalCol" id="OP02-001_p2">
+            <dt>
+              <button class="scrollBtn">ボタン</button>
+              <div class="infoCol">
+                <span>OP02-001</span> | <span>L</span> | <span>LEADER</span>
+              </div>
+              <div class="cardName">Edward.Newgate</div>
+            </dt>
+            <dd>
+              <div class="frontCol">
+                <img class="lazy" src="/images/cardlist/dummy.gif" data-src="../images/cardlist/card/OP02-001_p2.png?260330" alt="Edward.Newgate">
+                <a href="javascript:void(0);" class="commonBtn textViewBtn"><span>TEXT VIEW</span></a>
+              </div>
+              <div class="backCol">
+                <div class="col2">
+                  <div class="cost"><h3>Life</h3>6</div>
+                  <div class="attribute">
+                    <h3>Attribute</h3>
+                    <img src="/images/cardlist/attribute/ico_type03.png?v" alt="Special"><i>Special</i>
+                  </div>
+                </div>
+                <div class="col2">
+                  <div class="power"><h3>Power</h3>6000</div>
+                  <div class="counter"><h3>Counter</h3>-</div>
+                </div>
+                <div class="col2">
+                <div class="color"><h3>Color</h3>Red</div>
+                <div class="block"><h3>Block<br class="spInline" role="presentation"> icon</h3>1</div>
+                </div>
+                <div class="feature"><h3>Type</h3>The Four Emperors/Whitebeard Pirates</div>

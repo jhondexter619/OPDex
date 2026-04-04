@@ -1,0 +1,7595 @@
+{
+  "success": true,
+  "source_url": "https://onepiecetopdecks.com/deck-list/japan-op-15-deck-list-adventure-on-kamis-island/",
+  "formats": [
+    "japan-op-15-deck-list-adventure-on-kamis-island"
+  ],
+  "total_decks": 100,
+  "decks": [
+    {
+      "deck_name": "Purple Enel",
+      "date": "4/2/2026",
+      "tournament": "EXGrand(4-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Khye",
+      "country": "PH",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n3x OP10-075\n2x ST10-011\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n3x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST10-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "G Bonney",
+      "date": "4/2/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Treasure Island",
+      "placement": "1st Place",
+      "player": "takanomenoJ",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP07-019\n4x ST02-007\n4x EB01-015\n4x OP15-035\n4x ST24-002\n4x OP10-032\n2x OP15-024\n4x EB01-012\n4x OP08-023\n2x OP10-030\n4x OP12-118\n3x OP13-031\n2x OP06-035\n4x OP12-030\n1x OP13-040\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP07-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST02-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-015"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST24-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-032"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-024"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-023"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-030"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-118"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-030"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "GP Luffy",
+      "date": "4/2/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Marco",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 18,
+      "decklist": "1x EB02-010\n4x PRB02-012\n4x ST18-001\n4x ST18-004\n4x EB02-035\n2x EB02-061\n4x OP07-064\n4x EB02-017\n2x PRB02-005\n3x OP14-031\n2x OP13-118\n1x OP15-032\n1x OP13-076\n4x OP15-078\n4x OP09-078\n1x OP12-037\n3x OP13-040\n3x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB02-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-017"
+        },
+        {
+          "quantity": 2,
+          "card_code": "PRB02-005"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-032"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "GP Luffy",
+      "date": "4/2/2026",
+      "tournament": "EXGrand(5-0)",
+      "host": "TCG Center",
+      "placement": "1st Place",
+      "player": "Daichi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x EB02-010\n4x PRB02-012\n4x ST18-001\n4x ST18-004\n4x EB02-035\n2x EB02-061\n4x OP07-064\n4x EB02-017\n2x OP14-031\n2x OP13-118\n2x OP03-072\n4x OP15-078\n2x EB02-041\n4x OP09-078\n1x OP12-037\n3x OP13-040\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB02-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-017"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP03-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "4/2/2026",
+      "tournament": "EXGrand(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Hane",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-071\n4x OP12-063\n2x OP07-064\n2x OP15-060\n4x OP15-118\n2x OP13-076\n2x OP15-074\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078\n2x OP05-077",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-063"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-077"
+        }
+      ]
+    },
+    {
+      "deck_name": "Sky Island Luffy",
+      "date": "4/2/2026",
+      "tournament": "GAO Prelims(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "RKT",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-098\n4x OP15-108\n4x OP05-106\n4x OP11-106\n4x ST29-009\n4x OP15-113\n4x OP05-102\n4x OP12-099\n4x EB04-058\n4x OP15-114\n4x OP15-119\n4x OP15-109\n2x EB02-052\n4x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST29-009"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "RG Luffy",
+      "date": "4/2/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "TorekaCROWN",
+      "placement": "1st Place",
+      "player": "UFO",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP13-001\n2x OP01-016\n4x OP13-016\n4x EB04-002\n3x ST21-003\n4x EB04-007\n4x OP15-035\n4x OP14-022\n4x OP14-031\n4x OP13-027\n3x OP13-118\n2x OP15-032\n2x OP12-037\n3x OP13-040\n3x OP05-038\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-001"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP01-016"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-016"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-002"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST21-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-022"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-027"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-032"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-038"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Moria",
+      "date": "4/2/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "GakariCards",
+      "placement": "1st Place",
+      "player": "Ryoma",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-080\n4x OP06-091\n4x OP14-085\n2x OP06-090\n4x OP06-093\n2x EB03-045\n4x PRB02-013\n4x OP14-102\n4x OP14-100\n4x OP14-109\n4x OP14-110\n4x OP14-111\n2x OP15-113\n4x OP14-104\n4x OP14-097",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-091"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-093"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB03-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-013"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-100"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-109"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-097"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "4/2/2026",
+      "tournament": "FS",
+      "host": "Cardbox(31)",
+      "placement": "1st Place",
+      "player": "Rabi",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 13,
+      "decklist": "1x OP11-041\n4x OP14-102\n4x OP06-106\n4x OP11-106\n3x OP14-110\n4x OP14-111\n4x EB03-053\n4x EB04-058\n4x OP15-109\n4x OP14-104\n3x OP13-042\n4x EB03-060\n4x OP07-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Dobogeee",
+      "country": "Singapore",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n2x OP10-049\n4x OP15-046\n3x OP05-015\n1x OP09-118\n4x OP10-059\n4x OP15-054\n4x OP10-060\n2x OP15-056\n2x OP05-019\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-049"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Don",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP10-075\n2x ST10-011\n4x OP07-072\n4x OP15-071\n3x OP15-060\n4x OP15-118\n1x OP13-076\n1x OP15-074\n3x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST10-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-074"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Sky Island Luffy",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Da",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-098\n4x OP15-108\n4x OP05-106\n2x OP06-101\n2x OP06-106\n4x OP11-106\n4x OP15-113\n2x OP05-102\n4x OP05-105\n4x EB04-058\n4x OP15-114\n4x OP15-119\n4x OP15-109\n2x EB02-052\n2x OP05-117\n1x OP07-115\n3x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-106"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-101"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-117"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "Green Mihawk",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Haruki",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 19,
+      "decklist": "1x OP14-020\n1x ST02-007\n1x EB01-015\n4x OP12-034\n4x ST24-002\n4x OP10-032\n4x PRB02-006\n3x OP07-026\n2x OP08-023\n1x OP10-030\n3x OP12-118\n3x OP14-033\n4x OP13-031\n4x ST24-004\n2x OP06-038\n2x OP12-037\n4x OP13-040\n2x OP14-039\n2x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-020"
+        },
+        {
+          "quantity": 1,
+          "card_code": "ST02-007"
+        },
+        {
+          "quantity": 1,
+          "card_code": "EB01-015"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-034"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST24-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-032"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-006"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-026"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-023"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP10-030"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-118"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-033"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST24-004"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-038"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-039"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "G Bonney",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Ranowa",
+      "placement": "1st Place",
+      "player": "Tapi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP07-019\n4x ST02-007\n4x EB01-015\n4x OP15-035\n4x ST24-002\n4x OP10-032\n4x EB01-012\n4x OP08-023\n3x OP10-030\n3x OP12-118\n2x OP14-033\n2x OP13-031\n4x OP12-030\n2x ST24-004\n3x OP13-040\n3x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP07-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST02-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-015"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST24-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-032"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-023"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-030"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-033"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-030"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST24-004"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "RG Smoker",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Jay",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP10-001\n4x OP11-004\n3x OP10-005\n4x PRB02-001\n4x OP11-017\n3x EB04-003\n4x OP12-034\n2x OP05-030\n4x OP10-032\n4x OP10-030\n4x OP12-118\n4x OP13-031\n3x ST24-004\n2x OP12-037\n2x OP13-040\n3x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP10-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-004"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-005"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-017"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB04-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-034"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-030"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-032"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-030"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST24-004"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "4/1/2026",
+      "tournament": "FS",
+      "host": "Bookoff(32)",
+      "placement": "1st Place",
+      "player": "Hima",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n2x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n4x OP14-090\n4x OP14-094\n4x OP14-084\n3x OP15-092\n4x OP14-120\n3x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardlab",
+      "placement": "1st Place",
+      "player": "Shohei",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP10-075\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "YellowSubMarine",
+      "placement": "1st Place",
+      "player": "Kashimi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x EB02-035\n4x OP07-064\n1x OP15-060\n4x OP15-118\n2x OP13-076\n3x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078\n1x OP05-077\n3x OP09-077",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-077"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP09-077"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "4/1/2026",
+      "tournament": "FS",
+      "host": "Corgi(64)",
+      "placement": "1st Place",
+      "player": "Hama",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP10-075\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "Corgi(64)",
+      "placement": "1st Place",
+      "player": "Kai",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n1x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n4x OP14-090\n4x OP14-094\n4x OP14-084\n4x OP15-092\n4x OP14-120\n3x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "4/1/2026",
+      "tournament": "ShopEvent(4-0)",
+      "host": "WaiwaiCS",
+      "placement": "1st Place",
+      "player": "Daoka",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n1x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n4x OP14-090\n4x OP14-094\n4x OP14-084\n4x OP15-092\n4x OP14-120\n3x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Moria",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "PAO(64)",
+      "placement": "1st Place",
+      "player": "Chokki",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP14-080\n4x OP06-091\n4x OP15-084\n1x OP06-082\n3x EB03-045\n2x OP15-080\n4x PRB02-013\n4x OP14-102\n1x OP06-106\n4x OP14-111\n3x OP15-113\n4x EB04-058\n4x OP14-104\n4x OP06-098\n4x OP14-097\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-091"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-084"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-082"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB03-045"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-013"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-097"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "PAO(64)",
+      "placement": "1st Place",
+      "player": "Natu",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 15,
+      "decklist": "1x OP11-041\n3x OP14-102\n4x OP06-106\n4x OP11-106\n3x OP14-110\n3x OP14-111\n4x EB03-053\n4x EB04-058\n4x EB03-055\n3x OP10-112\n1x OP15-047\n2x OP07-051\n4x OP13-042\n3x EB03-060\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-110"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-112"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-047"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP07-051"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "Shirahoshi",
+      "date": "4/1/2026",
+      "tournament": "SB",
+      "host": "BINKS",
+      "placement": "1st Place",
+      "player": "Hoso",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP11-022\n4x OP11-100\n4x OP12-102\n4x EB03-052\n4x OP11-107\n2x OP10-112\n4x OP11-030\n4x OP11-036\n4x EB04-018\n4x EB04-016\n1x OP06-035\n4x EB04-011\n4x OP11-115\n3x OP13-040\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-022"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-100"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-107"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-112"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-030"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-036"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-018"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-016"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-115"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "GP Luffy",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "TCG Center",
+      "placement": "1st Place",
+      "player": "Takeru",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 15,
+      "decklist": "1x EB02-010\n4x PRB02-012\n4x ST18-001\n4x ST18-004\n4x EB02-035\n3x EB02-061\n4x OP07-064\n4x EB02-017\n2x OP14-031\n4x OP15-078\n2x OP05-076\n1x EB02-041\n4x OP09-078\n4x OP13-040\n2x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB02-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB02-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-017"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-076"
+        },
+        {
+          "quantity": 1,
+          "card_code": "EB02-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "GP Luffy",
+      "date": "4/1/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Kawahara",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x EB02-010\n4x PRB02-012\n4x ST18-001\n4x ST18-004\n4x EB02-035\n1x EB02-061\n4x OP07-064\n4x EB02-017\n3x PRB02-005\n4x OP14-031\n2x OP13-118\n4x OP05-076\n4x OP09-078\n4x OP13-040\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB02-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 1,
+          "card_code": "EB02-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-017"
+        },
+        {
+          "quantity": 3,
+          "card_code": "PRB02-005"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Doffy",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Dominariya",
+      "placement": "1st Place",
+      "player": "Rahu",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-060\n4x OP10-065\n4x OP14-067\n4x ST18-001\n4x OP14-072\n4x OP14-061\n4x OP14-068\n4x OP14-071\n1x OP14-074\n4x OP10-071\n1x OP11-067\n4x OP14-069\n4x OP13-076\n4x OP10-078\n4x OP07-076",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-065"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-068"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-071"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP14-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-071"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP11-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-069"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-076"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(5-0)",
+      "host": "TCGShop193",
+      "placement": "1st Place",
+      "player": "koinu_poker",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n2x OP10-049\n4x OP15-046\n1x OP05-015\n1x OP09-118\n4x OP10-059\n1x OP15-057\n4x OP15-054\n4x OP10-060\n3x OP15-056\n2x OP05-019\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-049"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(5-0)",
+      "host": "Overseas",
+      "placement": "1st Place",
+      "player": "Koono",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n1x OP05-015\n2x OP09-118\n4x OP10-059\n4x OP15-057\n4x OP15-054\n3x OP10-060\n2x OP15-056\n3x OP05-019\n3x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Sky Island Luffy",
+      "date": "4/1/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Cardshop",
+      "placement": "T2",
+      "player": "tm",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 13,
+      "decklist": "1x OP15-098\n4x OP15-108\n4x OP05-106\n4x OP11-106\n4x OP15-102\n4x OP15-113\n4x OP12-099\n4x EB04-058\n4x OP15-114\n4x OP15-119\n4x OP15-109\n2x EB02-052\n4x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "GP Luffy",
+      "date": "3/30/2026",
+      "tournament": "SB",
+      "host": "DragonStar(30)",
+      "placement": "1st Place",
+      "player": "Yamagawa",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x EB02-010\n4x PRB02-012\n4x ST18-001\n4x ST18-004\n4x EB02-035\n4x OP07-064\n4x EB02-017\n4x PRB02-005\n4x OP15-024\n4x OP13-118\n2x OP15-032\n4x OP15-078\n4x OP09-078\n4x OP13-040",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB02-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-017"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-005"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-024"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-032"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        }
+      ]
+    },
+    {
+      "deck_name": "Sky Island Luffy",
+      "date": "3/29/2026",
+      "tournament": "FS(5-0)",
+      "host": "Madcap",
+      "placement": "1st Place",
+      "player": "jaaaaays",
+      "country": "PH",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-098\n4x OP15-108\n4x OP05-106\n4x OP11-106\n4x ST29-009\n4x OP15-113\n4x OP05-105\n4x OP12-099\n4x EB04-058\n4x OP15-114\n4x OP15-119\n4x OP15-109\n2x EB02-052\n4x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST29-009"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "G Zoro",
+      "date": "3/29/2026",
+      "tournament": "SB",
+      "host": "Bookoff(22)",
+      "placement": "1st Place",
+      "player": "Donpanchi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP12-020\n4x OP12-028\n4x OP12-034\n2x OP12-027\n4x ST12-003\n2x OP12-026\n3x OP13-037\n4x OP14-026\n2x OP15-023\n4x OP15-027\n2x EB01-012\n4x OP12-031\n3x EB03-017\n2x OP14-033\n4x OP13-031\n2x OP08-036\n4x OP12-039",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP12-020"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-028"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-034"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-027"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST12-003"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-026"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-037"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-026"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-023"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-027"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB01-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-031"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB03-017"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-033"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-036"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-039"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/29/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Kuge",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n1x OP15-006\n1x OP09-118\n4x OP10-059\n3x OP15-057\n4x OP15-054\n4x OP10-060\n3x OP15-056\n3x OP05-019\n3x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-006"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/29/2026",
+      "tournament": "FS(5-0)",
+      "host": "Tsutaya",
+      "placement": "1st Place",
+      "player": "Kratos",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-002\n4x OP15-040\n3x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP10-049\n4x OP15-046\n4x OP05-015\n2x OP12-060\n4x OP15-054\n4x OP10-060\n1x OP06-058\n2x OP15-056\n2x OP05-019\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-049"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-058"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "RG Luffy",
+      "date": "3/29/2026",
+      "tournament": "ShopEvent(8-2)",
+      "host": "SodaCup",
+      "placement": "3rd Place",
+      "player": "Korekiyo",
+      "country": "JP",
+      "total_cards": 49,
+      "unique_cards": 16,
+      "decklist": "1x OP13-001\n2x OP01-016\n4x OP13-016\n4x EB04-002\n4x ST21-003\n4x EB04-007\n4x OP15-035\n4x OP14-022\n4x OP14-031\n4x OP13-027\n3x OP13-118\n1x OP15-032\n2x OP06-118\n2x OP13-040\n2x OP05-038\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-001"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP01-016"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-016"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST21-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-022"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-027"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-032"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-038"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Moria",
+      "date": "3/29/2026",
+      "tournament": "3v3(7-0)",
+      "host": "SodaCup",
+      "placement": "T8",
+      "player": "Babel",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP14-080\n4x OP06-091\n4x OP15-084\n1x OP06-082\n2x OP06-090\n1x EB03-045\n2x OP15-080\n4x PRB02-013\n4x OP14-102\n1x OP06-106\n4x OP14-111\n3x OP15-113\n4x EB04-058\n4x OP14-104\n4x OP06-098\n4x OP14-097\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-091"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-084"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-082"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-090"
+        },
+        {
+          "quantity": 1,
+          "card_code": "EB03-045"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-013"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-097"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "Teach",
+      "date": "3/29/2026",
+      "tournament": "FS",
+      "host": "Sanyodo",
+      "placement": "1st Place",
+      "player": "Ishikichi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP09-081\n4x OP09-089\n4x OP09-095\n4x OP11-083\n4x OP09-090\n4x OP09-086\n3x OP10-086\n4x OP09-083\n4x OP10-082\n4x ST27-003\n4x OP09-093\n4x OP09-096\n4x OP09-099\n3x OP09-098",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP09-081"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-089"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-095"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-083"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-086"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-086"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-083"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-082"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST27-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-099"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP09-098"
+        }
+      ]
+    },
+    {
+      "deck_name": "Teach",
+      "date": "3/29/2026",
+      "tournament": "SB(4-0)",
+      "host": "TorekaKirin",
+      "placement": "1st Place",
+      "player": "Satoshin",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP09-081\n4x OP09-089\n4x OP09-095\n4x OP11-083\n4x OP09-090\n2x OP09-088\n4x OP09-086\n2x OP09-083\n2x OP09-084\n4x OP10-082\n4x ST27-003\n4x OP09-093\n4x OP09-096\n4x OP09-099\n4x OP09-098",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP09-081"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-089"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-095"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-083"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-090"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP09-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-086"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP09-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP09-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-082"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST27-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-098"
+        }
+      ]
+    },
+    {
+      "deck_name": "GP Luffy",
+      "date": "3/29/2026",
+      "tournament": "SB(4-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "pironekogift",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x EB02-010\n4x PRB02-012\n4x ST18-001\n4x ST18-004\n4x EB02-035\n4x OP07-064\n4x EB02-017\n4x PRB02-005\n4x OP13-118\n1x OP15-032\n4x OP15-078\n2x OP05-076\n4x OP09-078\n1x OP12-037\n4x OP13-040\n2x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB02-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-017"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-005"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-032"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/29/2026",
+      "tournament": "FS(5-0)",
+      "host": "BandaiShop",
+      "placement": "1st Place",
+      "player": "Nino",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n3x OP10-075\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n2x OP15-074\n3x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-074"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/29/2026",
+      "tournament": "SB",
+      "host": "CardbaseJaburo",
+      "placement": "1st Place",
+      "player": "Tattsun",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP10-075\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/29/2026",
+      "tournament": "3v3(8-0)",
+      "host": "OninninCS",
+      "placement": "3rd Place",
+      "player": "Akamiso",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n2x OP15-067\n3x ST10-011\n4x OP15-071\n3x OP07-064\n4x OP15-060\n4x OP15-118\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078\n2x OP05-077",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST10-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-077"
+        }
+      ]
+    },
+    {
+      "deck_name": "BR Ace",
+      "date": "3/29/2026",
+      "tournament": "EXGrand",
+      "host": "Binks",
+      "placement": "1st Place",
+      "player": "NA",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP13-002\n4x ST22-002\n4x OP13-043\n4x OP08-040\n4x PRB02-008\n4x OP08-047\n2x OP13-046\n3x OP13-119\n4x OP03-003\n4x OP02-008\n2x ST15-005\n4x OP02-013\n1x OP09-118\n3x OP04-056\n3x EB04-008\n4x OP02-024",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST22-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-043"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-008"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-047"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-046"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP03-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP02-008"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST15-005"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP02-013"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP04-056"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB04-008"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP02-024"
+        }
+      ]
+    },
+    {
+      "deck_name": "Vivi",
+      "date": "3/29/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Ogre Neverland",
+      "placement": "1st Place",
+      "player": "Konstantin",
+      "country": "Indonesia",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x EB03-001\n4x OP13-012\n4x OP10-011\n2x PRB02-001\n4x OP13-011\n4x EB03-006\n2x ST23-001\n4x EB04-007\n3x OP06-007\n1x OP09-118\n4x EB04-024\n4x OP15-047\n2x OP10-045\n4x OP11-054\n4x EB03-024\n1x OP06-043\n3x OP05-118",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "EB03-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-011"
+        },
+        {
+          "quantity": 2,
+          "card_code": "PRB02-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-006"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST23-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-007"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-007"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-024"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-047"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-024"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-043"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-118"
+        }
+      ]
+    },
+    {
+      "deck_name": "Imu",
+      "date": "3/28/2026",
+      "tournament": "FS(5-0)",
+      "host": "Pichubros",
+      "placement": "1st Place",
+      "player": "Tien Khai",
+      "country": "Malaysia",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP13-079\n4x OP05-082\n4x OP13-086\n2x OP13-092\n4x OP13-083\n4x OP13-089\n4x OP13-080\n4x OP13-091\n4x OP13-084\n4x OP13-082\n4x OP13-096\n2x OP13-097\n4x OP13-098\n4x OP14-096\n1x OP05-097\n1x OP13-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-082"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-086"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-083"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-089"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-091"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-082"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-096"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-097"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-097"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Ace",
+      "date": "3/28/2026",
+      "tournament": "ShopEvent(8-0)",
+      "host": "ShumaiCup",
+      "placement": "1st Place",
+      "player": "Hikari",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x ST13-002\n4x ST13-013\n4x EB01-056\n4x OP06-106\n4x ST13-010\n4x ST13-014\n2x OP11-106\n4x ST13-011\n3x OP07-109\n4x PRP02-018\n4x EB04-058\n4x OP15-119\n3x OP07-053\n2x OP06-115\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "ST13-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST13-013"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-056"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST13-010"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST13-014"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST13-011"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-109"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRP02-018"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-053"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-115"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "3/28/2026",
+      "tournament": "ShopEvent(8-0)",
+      "host": "FukuouCS",
+      "placement": "1st Place",
+      "player": "Radio",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n2x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n4x OP14-090\n4x OP14-094\n4x OP14-084\n3x OP15-092\n4x OP14-120\n3x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Imu",
+      "date": "3/28/2026",
+      "tournament": "FS(5-0)",
+      "host": "Preyz",
+      "placement": "1st Place",
+      "player": "Sora",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP13-079\n4x OP13-086\n4x OP13-092\n4x OP13-083\n4x OP13-089\n4x PRB02-014\n4x OP13-080\n4x OP13-091\n4x OP13-084\n4x OP13-082\n4x OP13-096\n4x OP13-098\n4x OP14-096\n1x OP05-097\n1x OP13-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-086"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-083"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-089"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-014"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-091"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-082"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-097"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/28/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Imasho",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-067\n2x ST10-011\n4x OP15-071\n3x OP07-064\n4x OP15-060\n4x OP15-118\n1x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST10-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/27/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "SKYE_TCG",
+      "country": "Singapore",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x EB02-035\n4x OP07-064\n4x OP15-118\n1x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078\n2x OP05-077\n3x OP09-077",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-035"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-077"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP09-077"
+        }
+      ]
+    },
+    {
+      "deck_name": "Imu",
+      "date": "3/27/2026",
+      "tournament": "FS(5-0)",
+      "host": "E Forum",
+      "placement": "1st Place",
+      "player": "L",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP13-079\n4x OP13-086\n4x OP13-092\n4x OP13-083\n4x OP13-089\n2x PRB02-014\n4x OP13-080\n4x OP13-091\n4x OP13-084\n4x OP13-082\n4x OP13-096\n2x OP13-097\n4x OP13-098\n4x OP14-096\n1x OP05-097\n1x OP13-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-086"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-083"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-089"
+        },
+        {
+          "quantity": 2,
+          "card_code": "PRB02-014"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-080"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-091"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-082"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-096"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-097"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-097"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/27/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardbox",
+      "placement": "1st Place",
+      "player": "corgi_rugy",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP10-075\n1x ST10-011\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n1x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 1,
+          "card_code": "ST10-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/27/2026",
+      "tournament": "FS(5-0)",
+      "host": "BAZ",
+      "placement": "1st Place",
+      "player": "Gawain",
+      "country": "Indonesia",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-067\n4x OP10-075\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/27/2026",
+      "tournament": "FS(5-0)",
+      "host": "Hype n Play",
+      "placement": "1st Place",
+      "player": "OnlyBell",
+      "country": "Indonesia",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n2x OP15-006\n1x OP09-118\n4x OP10-059\n1x OP15-057\n2x OP12-060\n4x OP15-054\n4x OP10-060\n2x OP15-056\n2x OP05-019\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-006"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/25/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Gran",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n2x OP15-006\n1x OP09-118\n4x OP10-059\n3x OP15-057\n4x OP15-054\n4x OP10-060\n2x OP15-056\n2x OP05-019\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-006"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "3/25/2026",
+      "tournament": "FS(4-0)",
+      "host": "JIN Studio",
+      "placement": "1st Place",
+      "player": "alicepuyo24",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP14-079\n4x OP14-083\n2x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n3x OP14-093\n1x OP14-086\n3x OP14-090\n3x OP14-094\n4x OP14-084\n4x OP15-092\n4x OP14-120\n2x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP14-086"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/25/2026",
+      "tournament": "FS(5-0)",
+      "host": "Tsutaya",
+      "placement": "1st Place",
+      "player": "Godan",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP11-041\n4x OP06-106\n4x EB03-053\n4x EB04-058\n4x OP12-119\n4x EB03-055\n2x OP08-050\n4x PRB02-008\n4x EB03-022\n4x OP01-070\n4x OP06-119\n4x EB03-060\n4x OP07-115\n4x OP04-056",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-050"
+        },
+        {
+          "quantity": 4,
+          "card_code": "PRB02-008"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-022"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP01-070"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP04-056"
+        }
+      ]
+    },
+    {
+      "deck_name": "Sky Island Luffy",
+      "date": "3/25/2026",
+      "tournament": "ShopEvent",
+      "host": "toreca_binks",
+      "placement": "1st Place",
+      "player": "Munk",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 14,
+      "decklist": "1x OP15-098\n4x OP15-108\n4x OP05-106\n4x OP11-106\n4x OP15-113\n4x OP05-102\n4x EB04-058\n4x OP15-114\n4x OP15-119\n2x ST29-005\n4x OP15-109\n2x EB02-052\n2x OP05-117\n4x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST29-005"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-117"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "Green Mihawk",
+      "date": "3/24/2026",
+      "tournament": "FS",
+      "host": "Cherumo(63)",
+      "placement": "1st Place",
+      "player": "Matsui",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 24,
+      "decklist": "1x OP14-020\n3x ST02-007\n2x EB01-015\n4x OP12-034\n3x ST24-002\n2x OP10-032\n4x OP13-037\n2x OP01-047\n1x OP07-026\n1x OP08-023\n2x OP10-030\n2x ST24-005\n1x OP14-029\n2x OP14-033\n2x OP13-031\n2x OP14-027\n2x OP14-119\n3x ST24-004\n1x OP01-057\n2x OP06-038\n2x OP12-037\n3x OP13-040\n2x OP14-039\n2x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-020"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST02-007"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB01-015"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-034"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST24-002"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-032"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-037"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP01-047"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-026"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP08-023"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-030"
+        },
+        {
+          "quantity": 2,
+          "card_code": "ST24-005"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP14-029"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-033"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-027"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-119"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST24-004"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP01-057"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-038"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-037"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-039"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/24/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cherumo(63)",
+      "placement": "2nd Place",
+      "player": "NA",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n3x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP15-071\n2x OP07-064\n4x OP15-060\n4x OP15-118\n2x OP13-076\n3x OP15-074\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Doffy",
+      "date": "3/23/2026",
+      "tournament": "FS(5-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Mokumoku",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-060\n4x OP10-065\n4x OP14-067\n3x ST18-001\n3x OP14-063\n3x OP14-072\n3x OP14-061\n4x OP14-068\n4x OP14-071\n4x OP14-074\n4x OP10-071\n4x OP14-069\n2x OP13-076\n4x OP10-078\n4x OP07-076",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-065"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-067"
+        },
+        {
+          "quantity": 3,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-063"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-072"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-068"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-069"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-076"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/22/2026",
+      "tournament": "GAOPrelims(4-0)",
+      "host": "Cardshop",
+      "placement": "1st Place",
+      "player": "Chalice",
+      "country": "Singapore",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n2x OP15-006\n1x OP09-118\n4x OP10-059\n2x OP15-057\n1x OP12-060\n4x OP15-054\n4x OP10-060\n4x OP15-056\n2x OP05-019\n2x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-006"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP12-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/22/2026",
+      "tournament": "GAO Prelims(4-0)",
+      "host": "Hobby Stadium",
+      "placement": "2nd Place",
+      "player": "xlem",
+      "country": "PH",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n2x OP10-049\n4x OP15-046\n2x OP05-015\n1x OP09-118\n3x OP10-059\n2x OP15-057\n4x OP15-054\n4x OP10-060\n2x OP15-056\n2x OP05-019\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-049"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "3/22/2026",
+      "tournament": "SB(5-0)",
+      "host": "GamesOnBoard",
+      "placement": "1st Place",
+      "player": "Tien Khai",
+      "country": "Malaysia",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP14-079\n4x OP14-083\n2x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n2x OP14-086\n4x OP14-090\n4x OP14-094\n4x OP14-084\n4x OP15-092\n4x OP14-120\n2x OP05-094\n3x OP14-096\n3x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-086"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Yellow Enel",
+      "date": "3/22/2026",
+      "tournament": "ShopEvent(7-1)",
+      "host": "AceCup",
+      "placement": "1st Place",
+      "player": "Ace_1210_317",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP05-098\n4x EB01-056\n4x OP06-101\n4x OP06-106\n2x EB01-057\n2x OP11-106\n3x OP06-104\n3x EB03-053\n4x EB04-058\n2x OP09-107\n3x EB04-054\n2x OP10-112\n4x EB02-052\n4x OP07-119\n4x OP06-115\n4x OP07-115\n1x OP07-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP05-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-056"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-101"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB01-057"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP09-107"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB04-054"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-112"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-115"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "G Zoro",
+      "date": "3/22/2026",
+      "tournament": "3v3",
+      "host": "BCGFest",
+      "placement": "1st Place",
+      "player": "Wakadanna",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP12-020\n4x OP12-028\n4x OP12-034\n4x ST12-003\n4x OP12-029\n2x OP12-026\n4x OP13-037\n4x OP15-023\n4x OP15-027\n4x EB01-012\n4x OP12-031\n4x OP13-031\n4x OP08-036\n4x OP12-039",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP12-020"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-028"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-034"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST12-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-029"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-026"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-037"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-023"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-027"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-039"
+        }
+      ]
+    },
+    {
+      "deck_name": "RG Luffy",
+      "date": "3/22/2026",
+      "tournament": "3v3",
+      "host": "BandaiCardfest",
+      "placement": "1st Place",
+      "player": "Miya",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 13,
+      "decklist": "1x OP13-001\n4x OP13-012\n4x OP13-016\n4x EB04-002\n4x ST21-003\n3x OP10-011\n4x EB04-007\n4x OP14-022\n4x OP14-031\n4x OP13-027\n3x OP13-118\n4x OP05-038\n4x OP08-036",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP13-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-012"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-016"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST21-003"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-022"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-031"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-027"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-038"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-036"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Doffy",
+      "date": "3/22/2026",
+      "tournament": "3v3",
+      "host": "BCGFest",
+      "placement": "1st Place",
+      "player": "Pop",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP14-060\n4x OP09-069\n4x OP10-065\n4x ST18-001\n3x OP14-063\n2x OP14-072\n1x OP10-072\n3x OP14-061\n4x OP14-068\n4x OP14-071\n4x OP14-074\n4x OP10-071\n4x OP14-069\n3x OP13-076\n2x OP10-078\n4x OP07-076",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-069"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-065"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-063"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-072"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP10-072"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-068"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-069"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-076"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/22/2026",
+      "tournament": "3v3",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Shion",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n1x OP09-118\n4x OP10-059\n4x OP15-057\n4x OP15-054\n4x OP10-060\n3x OP15-056\n3x OP05-019\n3x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/22/2026",
+      "tournament": "3v3",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Shuma",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 16,
+      "decklist": "1x OP11-041\n4x OP14-102\n3x OP06-106\n3x OP11-106\n4x OP06-104\n3x OP14-110\n4x OP14-111\n4x EB03-053\n4x EB04-058\n4x EB03-055\n4x OP14-104\n1x OP08-050\n1x OP15-047\n1x OP06-047\n4x OP07-115\n2x OP04-056",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP08-050"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-047"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP04-056"
+        }
+      ]
+    },
+    {
+      "deck_name": "Kalgara",
+      "date": "3/22/2026",
+      "tournament": "3v3",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Ryaosu",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP08-098\n3x OP15-108\n4x OP06-106\n4x OP11-106\n4x OP15-101\n4x OP08-110\n4x EB03-053\n4x OP08-109\n4x OP12-099\n4x EB04-058\n4x OP15-114\n3x OP08-099\n4x OP12-114\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP08-098"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-101"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-109"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP08-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/22/2026",
+      "tournament": "3v3(9-0)",
+      "host": "BCGFest",
+      "placement": "T8",
+      "player": "Fakenoko",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n2x OP15-067\n4x OP15-071\n4x OP07-064\n4x OP15-060\n4x OP15-118\n2x OP13-076\n2x OP15-074\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "RG Krieg",
+      "date": "3/22/2026",
+      "tournament": "FS(5-0)",
+      "host": "Tsutaya",
+      "placement": "1st Place",
+      "player": "yorozuya1229",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-001\n4x OP15-009\n4x OP15-003\n4x OP15-017\n4x OP15-007\n4x OP15-008\n4x OP15-026\n4x OP15-028\n4x OP15-023\n2x OP15-027\n4x OP15-025\n4x OP13-040\n4x OP15-037\n4x OP15-038",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-009"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-017"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-008"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-026"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-028"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-023"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-027"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-025"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-037"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-038"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "3/21/2026",
+      "tournament": "FS(5-0)",
+      "host": "GGs gaming",
+      "placement": "1st Place",
+      "player": "Gerard",
+      "country": "PH",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n2x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n3x OP14-090\n4x OP14-094\n4x OP14-084\n4x OP15-092\n4x OP14-120\n4x OP05-094\n4x OP14-096\n3x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/21/2026",
+      "tournament": "FS",
+      "host": "Gamers Shop GS",
+      "placement": "1st Place",
+      "player": "Pennywise",
+      "country": "PH",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n2x OP05-015\n2x OP05-006\n1x OP09-118\n4x OP10-059\n2x OP15-057\n4x OP15-054\n4x OP10-060\n3x OP15-056\n1x OP05-019\n3x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-006"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-019"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/21/2026",
+      "tournament": "JuniorCS",
+      "host": "BandaiCardFest",
+      "placement": "1st Place",
+      "player": "Pikku",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP10-049\n4x OP15-046\n4x OP05-015\n2x EB02-002\n2x OP09-118\n2x OP10-059\n4x OP15-054\n4x OP10-060\n4x OP15-056\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-049"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-002"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/21/2026",
+      "tournament": "JuniorCS",
+      "host": "BandaiCardFest",
+      "placement": "1st Place",
+      "player": "Takaro",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n2x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP10-049\n4x OP15-046\n4x OP05-015\n1x OP09-118\n2x OP10-059\n2x OP15-057\n2x OP12-060\n4x OP15-054\n4x OP10-060\n1x OP15-056\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-049"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Boa",
+      "date": "3/21/2026",
+      "tournament": "JuniorCS",
+      "host": "BCGFest",
+      "placement": "2nd Place",
+      "player": "Nao15",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP14-041\n4x OP06-106\n2x OP14-103\n3x OP14-113\n4x OP14-114\n4x EB03-053\n4x EB04-058\n3x OP12-119\n4x OP14-105\n4x OP14-107\n4x OP14-112\n2x OP06-047\n4x ST17-004\n3x OP07-115\n2x OP07-056\n2x OP07-057\n1x OP06-058",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-103"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-107"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-112"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST17-004"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP07-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP07-057"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-058"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Boa",
+      "date": "3/21/2026",
+      "tournament": "JuniorCS",
+      "host": "BCGFest",
+      "placement": "2nd Place",
+      "player": "Shuu",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP14-041\n4x OP06-106\n2x OP14-103\n4x OP14-113\n4x OP14-114\n4x EB03-053\n4x EB04-058\n3x OP12-119\n4x OP14-105\n4x OP14-107\n4x OP14-112\n2x OP06-047\n4x ST17-004\n4x OP07-115\n1x OP07-056\n1x OP07-057\n1x OP06-058",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-103"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-107"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-112"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST17-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-056"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-057"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-058"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "3/21/2026",
+      "tournament": "Qualifier",
+      "host": "BandaiCardFest",
+      "placement": "1st Place",
+      "player": "Berujii",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n1x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n4x OP14-090\n4x OP14-094\n4x OP14-084\n4x OP15-092\n4x OP14-120\n3x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Doffy",
+      "date": "3/21/2026",
+      "tournament": "Qualifier(10-2)",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Akanashi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-060\n4x OP10-065\n4x OP14-067\n4x ST18-001\n3x OP14-063\n4x OP14-072\n3x OP14-061\n4x OP14-068\n4x OP14-071\n4x OP14-074\n4x OP10-071\n4x OP14-069\n3x OP13-076\n1x OP10-078\n4x OP07-076",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-065"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-063"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-072"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-068"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-074"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-069"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP10-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-076"
+        }
+      ]
+    },
+    {
+      "deck_name": "Sky Island Luffy",
+      "date": "3/21/2026",
+      "tournament": "Qualifier",
+      "host": "BCGFest",
+      "placement": "1st Place",
+      "player": "Hana",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 13,
+      "decklist": "1x OP15-098\n4x OP15-108\n4x OP05-106\n4x OP11-106\n4x ST29-009\n4x OP15-113\n4x OP12-099\n4x EB04-058\n4x OP15-114\n4x OP15-119\n4x OP15-109\n2x EB02-052\n4x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-108"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST29-009"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-109"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB02-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/21/2026",
+      "tournament": "Qualifier",
+      "host": "BCGFest",
+      "placement": "2nd Place",
+      "player": "Aoi",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 15,
+      "decklist": "1x OP11-041\n4x OP06-106\n4x OP11-106\n4x OP06-104\n4x OP12-112\n4x EB03-053\n4x EB04-058\n4x OP12-119\n4x EB03-055\n1x EB04-061\n2x OP08-050\n1x OP06-047\n4x OP13-042\n4x OP07-115\n2x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-112"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 1,
+          "card_code": "EB04-061"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP08-050"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-116"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/21/2026",
+      "tournament": "Qualifier(9-2)",
+      "host": "BCGFest",
+      "placement": "T8",
+      "player": "Nakun",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 16,
+      "decklist": "1x OP11-041\n4x OP14-102\n3x OP06-106\n4x OP11-106\n3x OP06-104\n3x OP14-110\n4x OP14-111\n4x EB03-053\n4x EB04-058\n4x EB03-055\n4x OP14-104\n1x OP06-047\n1x PRB02-008\n4x OP13-042\n3x EB03-060\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 1,
+          "card_code": "PRB02-008"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 3,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/21/2026",
+      "tournament": "Qualifier(9-1)",
+      "host": "BandaiCardFest",
+      "placement": "T16",
+      "player": "Chelsea",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP15-069\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-069"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/20/2026",
+      "tournament": "FS(6-0)",
+      "host": "Turbo on board",
+      "placement": "1st Place",
+      "player": "MindGameTeam",
+      "country": "Thailand",
+      "total_cards": 50,
+      "unique_cards": 14,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-052\n4x OP15-053\n4x OP10-045\n4x OP15-046\n4x OP05-015\n2x OP15-006\n4x OP10-059\n4x OP15-054\n4x OP10-060\n3x OP15-056\n4x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-052"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-006"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "RG Krieg",
+      "date": "3/20/2026",
+      "tournament": "FS EX(5-0)",
+      "host": "BandaiCardfest",
+      "placement": "1st Place",
+      "player": "Yunika",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-001\n4x OP15-009\n2x OP15-011\n4x OP15-003\n4x OP15-017\n4x OP15-007\n4x OP15-008\n4x OP15-026\n4x OP15-028\n4x OP15-023\n4x OP15-025\n4x OP13-040\n4x OP15-037\n4x OP15-038",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-009"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-011"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-003"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-017"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-007"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-008"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-026"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-028"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-023"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-025"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-037"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-038"
+        }
+      ]
+    },
+    {
+      "deck_name": "Red Blue Lucy",
+      "date": "3/20/2026",
+      "tournament": "3v3CS",
+      "host": "BandaiCardFest",
+      "placement": "1st Place",
+      "player": "Mayumura",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP15-002\n4x OP15-040\n4x OP15-053\n4x OP10-045\n4x OP15-046\n1x OP05-015\n2x OP05-006\n4x OP15-006\n1x OP09-118\n4x OP10-059\n2x OP15-057\n3x OP12-060\n4x OP15-054\n4x OP10-060\n3x OP15-056\n2x OP15-021\n4x OP15-020",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-002"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-045"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-046"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP05-015"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP05-006"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-006"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP09-118"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-059"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-057"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-056"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-021"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-020"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/20/2026",
+      "tournament": "3v3CS",
+      "host": "BandaiCardFest",
+      "placement": "1st Place",
+      "player": "Ohagi",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 15,
+      "decklist": "1x OP11-041\n3x OP14-102\n4x OP06-106\n4x OP11-106\n3x OP06-104\n4x OP14-110\n4x OP14-111\n4x EB03-053\n4x EB04-058\n4x EB03-055\n3x OP14-104\n1x PRB02-008\n3x OP13-042\n2x EB03-060\n3x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-102"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-111"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-104"
+        },
+        {
+          "quantity": 1,
+          "card_code": "PRB02-008"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 2,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Boa",
+      "date": "3/20/2026",
+      "tournament": "3v3CS",
+      "host": "BandaiCardFest",
+      "placement": "1st Place",
+      "player": "Randy",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-041\n4x OP06-106\n2x OP14-103\n4x OP14-113\n4x OP14-114\n4x EB03-053\n4x EB04-058\n4x OP12-119\n4x OP14-105\n4x OP14-107\n4x OP14-112\n3x OP06-047\n4x ST17-004\n4x OP07-115\n1x OP07-057",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-103"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-107"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-112"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST17-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-057"
+        }
+      ]
+    },
+    {
+      "deck_name": "UP Luffy",
+      "date": "3/20/2026",
+      "tournament": "3v3CS(10-3)",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Hasse",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 15,
+      "decklist": "1x OP11-040\n4x ST18-001\n4x EB01-061\n4x OP10-072\n3x OP10-071\n4x OP13-043\n1x OP06-047\n4x OP11-054\n4x OP06-119\n4x OP09-078\n4x OP11-080\n1x OP07-076\n2x OP14-077\n4x OP08-076\n3x OP06-059",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-040"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST18-001"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB01-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-072"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-043"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-054"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP09-078"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-080"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-076"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-076"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-059"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/20/2026",
+      "tournament": "3v3CS",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Tony",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP11-041\n4x OP06-106\n3x OP11-106\n4x OP06-104\n4x OP12-112\n4x OP15-113\n4x EB03-053\n4x EB04-058\n4x EB03-055\n3x OP03-048\n3x OP06-047\n4x OP13-042\n4x EB03-060\n4x OP07-115\n1x OP06-058",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-112"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP03-048"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP06-058"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Boa",
+      "date": "3/20/2026",
+      "tournament": "3v3CS",
+      "host": "BandaiCardFest",
+      "placement": "2nd Place",
+      "player": "Ohagi",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 17,
+      "decklist": "1x OP14-041\n4x OP06-106\n3x OP14-103\n3x OP14-113\n4x OP14-114\n2x OP15-113\n4x EB03-053\n4x EB04-058\n3x OP12-119\n4x OP14-105\n4x OP14-107\n3x OP14-112\n2x OP06-047\n4x ST17-004\n4x OP07-115\n1x OP07-056\n1x OP07-057",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-103"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-114"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-113"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP12-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-107"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP14-112"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "ST17-004"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-056"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-057"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/20/2026",
+      "tournament": "3v3CS(9-2)",
+      "host": "BandaiCardFest",
+      "placement": "T8",
+      "player": "Shohei",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP12-071\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP15-071\n4x OP07-064\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-064"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "Kalgara",
+      "date": "3/20/2026",
+      "tournament": "3v3CS(8-3)",
+      "host": "BandaiCardFest",
+      "placement": "T8",
+      "player": "Makaiou",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP08-098\n4x OP06-106\n3x OP11-106\n4x OP06-105\n4x OP15-101\n3x OP15-110\n4x OP08-110\n4x EB03-053\n4x OP08-109\n4x OP12-099\n4x EB04-058\n4x OP15-114\n2x OP15-119\n2x OP12-114\n4x OP07-115",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP08-098"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-105"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-101"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-110"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP08-109"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-099"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-114"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP12-114"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/20/2026",
+      "tournament": "3v3CS(9-2)",
+      "host": "BandaiCardFest",
+      "placement": "T8",
+      "player": "Game_R_zz",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 16,
+      "decklist": "1x OP11-041\n4x OP06-106\n3x OP11-106\n4x OP06-104\n4x OP12-112\n4x EB03-053\n4x EB04-058\n1x OP15-119\n4x EB03-055\n3x OP10-112\n2x OP03-048\n2x OP15-047\n2x OP06-047\n4x EB03-060\n4x OP07-115\n1x OP07-056",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP12-112"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP15-119"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-112"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP03-048"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-047"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 1,
+          "card_code": "OP07-056"
+        }
+      ]
+    },
+    {
+      "deck_name": "Black Crocodile",
+      "date": "3/20/2026",
+      "tournament": "3v3(9-1)",
+      "host": "BandaiCardFest",
+      "placement": "T16",
+      "player": "Zorozu",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 15,
+      "decklist": "1x OP14-079\n4x OP14-083\n2x OP14-085\n4x OP14-087\n4x OP14-088\n4x OP14-091\n2x OP14-093\n4x OP14-090\n4x OP14-094\n4x OP14-084\n3x OP15-092\n4x OP14-120\n3x OP05-094\n4x OP14-096\n4x OP14-099",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP14-079"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-083"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-085"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-087"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-088"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-091"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP14-093"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-090"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-084"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP15-092"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-120"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP05-094"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-096"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP14-099"
+        }
+      ]
+    },
+    {
+      "deck_name": "Purple Enel",
+      "date": "3/20/2026",
+      "tournament": "3v3CS(7-2)",
+      "host": "BandaiCardFest",
+      "placement": "NA",
+      "player": "Soumen",
+      "country": "JP",
+      "total_cards": 51,
+      "unique_cards": 14,
+      "decklist": "1x OP15-058\n4x OP15-061\n4x OP15-066\n4x OP15-067\n4x OP10-075\n4x OP07-072\n4x OP15-071\n4x OP15-060\n4x OP15-118\n2x OP13-076\n4x OP15-075\n4x OP15-076\n4x OP15-077\n4x OP15-078",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP15-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-061"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-066"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-067"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP10-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-072"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-071"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-118"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP13-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-075"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-076"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-077"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP15-078"
+        }
+      ]
+    },
+    {
+      "deck_name": "BY Nami",
+      "date": "3/20/2026",
+      "tournament": "3v3CS(7-2)",
+      "host": "BandaiCardFest",
+      "placement": "NA",
+      "player": "Yoru",
+      "country": "JP",
+      "total_cards": 47,
+      "unique_cards": 15,
+      "decklist": "1x OP11-041\n4x OP06-106\n4x OP11-106\n4x OP06-104\n4x EB03-053\n4x EB04-058\n4x EB03-055\n3x OP10-112\n2x OP15-047\n2x OP06-047\n2x OP07-051\n3x OP13-042\n4x EB03-060\n4x OP07-115\n2x OP15-116",
+      "cards": [
+        {
+          "quantity": 1,
+          "card_code": "OP11-041"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP11-106"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP06-104"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-053"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB04-058"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-055"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP10-112"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-047"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP06-047"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP07-051"
+        },
+        {
+          "quantity": 3,
+          "card_code": "OP13-042"
+        },
+        {
+          "quantity": 4,
+          "card_code": "EB03-060"
+        },
+        {
+          "quantity": 4,
+          "card_code": "OP07-115"
+        },
+        {
+          "quantity": 2,
+          "card_code": "OP15-116"
+        }
+      ]
+    }
+  ],
+  "timestamp": "2026-04-03T15:59:14.338107+00:00"
+}

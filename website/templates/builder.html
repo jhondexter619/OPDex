@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Deck Builder &mdash; OPDex{% endblock %}
+
+{% block hero %}
+<div class="hero-banner hero-builder hero-with-bg">
+    <img class="hero-bg-img" src="/header-image/builder" alt="" loading="eager">
+    <div class="hero-cards-deco">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">Forge Your <span class="accent">Crew</span></h1>
+        <p class="hero-subtitle">Build, test, and save custom decks. Click cards to recruit them to your crew.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="builder-layout">
+    <!-- Top: Deck Tray -->
+    <div class="builder-deck reveal">
+        <div class="builder-deck-header">
+            <div class="builder-deck-title-row">
+                <h2>Your Deck (<span id="deckCount">0</span>)</h2>
+                <input type="text" id="deckName" class="search-input" placeholder="Deck name&hellip;" value="Custom Deck">
+            </div>
+            <div class="builder-actions">
+                <button class="btn btn-primary" id="downloadDeckBtn" disabled>
+                    Download PDF
+                </button>
+                <button class="btn btn-save" id="saveDeckBtn" disabled>
+                    Save to Library
+                </button>
+                <button class="btn btn-secondary" id="clearDeckBtn">Clear</button>
+            </div>
+        </div>
+        <div class="deck-tray" id="deckList">
+            <div class="deck-empty" id="deckEmpty">
+                Click cards below to add them to your deck
+            </div>
+        </div>
+        <div class="save-feedback" id="saveFeedback"></div>
+    </div>
+
+    <!-- Bottom: Card Browser -->
+    <div class="builder-browser reveal">
+        <div class="builder-controls">
+            <h2>Card Browser</h2>
+            <div class="builder-filters">
+                <select id="setFilter" class="builder-select">
+                    <option value="__all__" selected>All Cards</option>
+                    {% for s in sets %}
+                    <option value="{{ s }}">{{ s }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" id="cardSearch" class="search-input" placeholder="Search cards&hellip;">
+            </div>
+        </div>
+        <!-- Advanced filters -->
+        <div class="filter-row" id="filterRow">
+            <select id="colorFilter" class="builder-select filter-sm" title="Filter by color">
+                <option value="">All Colors</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Purple">Purple</option>
+                <option value="Black">Black</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+            <select id="typeFilter" class="builder-select filter-sm" title="Filter by card type">
+                <option value="">All Types</option>
+                <option value="Leader">Leader</option>
+                <option value="Character">Character</option>
+                <option value="Event">Event</option>
+                <option value="Stage">Stage</option>
+            </select>
+            <div class="cost-slider-group" id="costGroup">
+                <label class="cost-label">Cost: <span id="costValue">0 &ndash; 10</span></label>
+                <div class="cost-slider-wrap">
+                    <div class="cost-track"><div class="cost-track-fill" id="costTrackFill"></div></div>
+                    <input type="range" id="costMin" class="cost-slider" min="0" max="10" value="0" title="Minimum cost">
+                    <input type="range" id="costMax" class="cost-slider" min="0" max="10" value="10" title="Maximum cost">
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading / hint state -->
+        <div class="browser-hint" id="browserHint" style="display:none">
+            Loading cards&hellip;
+        </div>
+
+        <!-- Pagination top -->
+        <div class="browser-pagination" id="browserPagination" style="display:none">
+            <button class="page-btn" id="pagePrev" disabled>&larr; Prev</button>
+            <span class="page-info" id="pageInfo">Page 1 of 1 &middot; 0 cards</span>
+            <button class="page-btn" id="pageNext" disabled>Next &rarr;</button>
+        </div>
+
+        <div class="browser-grid" id="browserGrid"></div>
+
+        <!-- Pagination bottom (mirrors top) -->
+        <div class="browser-pagination" id="browserPaginationBot" style="display:none">
+            <button class="page-btn" id="pagePrevBot" disabled>&larr; Prev</button>
+            <span class="page-info" id="pageInfoBot"></span>
+            <button class="page-btn" id="pageNextBot" disabled>Next &rarr;</button>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox for card zoom -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/builder.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}{{ arch.name }} &mdash; OPDex{% endblock %}
+
+{% block hero %}
+<div class="hero-banner hero-detail hero-split" style="--deck-color1: {{ deck_colors[0] }}; --deck-color2: {{ deck_colors[1] }}">
+    <div class="hero-content hero-content-left">
+        <h1 class="hero-detail-title">{{ arch.name }}</h1>
+        <p class="hero-detail-subtitle">Archetype overview and meta performance</p>
+    </div>
+    {% if arch.leader_code %}
+    <div class="hero-leader-art">
+        <img src="/card-image/{{ arch.leader_code }}" alt="{{ arch.name }}" loading="eager">
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block content %}
+<a href="/" class="back-link"><span class="back-arrow">&larr;</span> Back to Meta</a>
+
+<section class="deck-header reveal">
+    <h1>{{ arch.name }}</h1>
+    <div class="deck-meta-row">
+        <span class="meta-tag"><strong>{{ arch.count }}</strong> deck{{ 's' if arch.count != 1 }} tracked</span>
+        <span class="meta-tag"><strong>{{ arch.share }}%</strong> meta share</span>
+        <span class="meta-tag placement"><strong>Best:</strong> {{ arch.best_placement }}</span>
+        <span class="meta-tag"><strong>Avg Placement:</strong> {{ arch.avg_placement }}</span>
+    </div>
+</section>
+
+<!-- Matchups -->
+{% if matchups.threats or matchups.favorable %}
+<section class="section matchup-section reveal">
+    <h2>Matchup Outlook</h2>
+    <p class="matchup-note">Based on average tournament placement across all tracked results.</p>
+    <div class="matchup-grid">
+        {% if matchups.threats %}
+        <div class="matchup-col">
+            <h3 class="matchup-label threats-label">Watch Out For</h3>
+            {% for t in matchups.threats %}
+            <a href="/archetype/{{ t.name | urlencode }}" class="matchup-item threat">
+                {% if t.leader_code %}
+                <div class="matchup-leader">
+                    <img src="/card-image/{{ t.leader_code }}" alt="" loading="lazy"
+                         onerror="this.parentElement.style.display='none'">
+                </div>
+                {% endif %}
+                <div class="matchup-info">
+                    <span class="matchup-name">{{ t.name }}</span>
+                    <span class="matchup-stat">avg {{ t.avg_placement }} &middot; {{ t.count }} decks</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if matchups.favorable %}
+        <div class="matchup-col">
+            <h3 class="matchup-label favorable-label">Favorable Against</h3>
+            {% for f in matchups.favorable %}
+            <a href="/archetype/{{ f.name | urlencode }}" class="matchup-item favorable">
+                {% if f.leader_code %}
+                <div class="matchup-leader">
+                    <img src="/card-image/{{ f.leader_code }}" alt="" loading="lazy"
+                         onerror="this.parentElement.style.display='none'">
+                </div>
+                {% endif %}
+                <div class="matchup-info">
+                    <span class="matchup-name">{{ f.name }}</span>
+                    <span class="matchup-stat">avg {{ f.avg_placement }} &middot; {{ f.count }} decks</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+<!-- All Decks for this Archetype -->
+<section class="section reveal">
+    <h2>All {{ arch.name }} Profiles</h2>
+    <div class="table-wrapper">
+        <table class="deck-table">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Placement</th>
+                    <th>Tournament</th>
+                    <th>Date</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody class="stagger-rows">
+                {% for deck in decks %}
+                <tr class="deck-row" onclick="window.location='/deck/{{ deck.idx }}'">
+                    <td><strong>{{ deck.player or '&mdash;' }}</strong></td>
+                    <td><span class="placement-badge">{{ deck.placement or '&mdash;' }}</span></td>
+                    <td>{{ deck.tournament or '&mdash;' }}</td>
+                    <td>{{ deck.date or '&mdash;' }}</td>
+                    <td>{{ deck.country or '&mdash;' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}
