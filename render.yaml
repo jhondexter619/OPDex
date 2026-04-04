@@ -9,3 +9,5 @@ services:
         value: "3.11"
       - key: OPDEX_SCRAPE_INTERVAL
         value: "21600"
+      - key: OPDEX_SKIP_FACE_DETECT
+        value: "1"

@@ -240,11 +240,18 @@ def detect_face_y(card_code: str) -> int:
       2. Face cascades on raw image (high confidence)
       3. Face cascades on preprocessed images (fallback)
     Results are cached in memory. Returns 30 as a safe default.
+
+    Disabled when OPDEX_SKIP_FACE_DETECT=1 (e.g. on Render where OpenCV
+    cascade classifiers are broken on Python 3.14).
     """
+    default = 30
+
+    if os.environ.get("OPDEX_SKIP_FACE_DETECT") == "1":
+        return default
+
     if card_code in _face_y_cache:
         return _face_y_cache[card_code]
 
-    default = 30
     path = _find_card_image(card_code)
     if not path:
         _face_y_cache[card_code] = default
