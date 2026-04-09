@@ -43,6 +43,7 @@ _sb = None
 if SUPABASE_URL and SUPABASE_SERVICE_KEY:
     _sb = supabase_create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from auth import require_admin, require_auth  # noqa: E402
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
