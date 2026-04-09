@@ -5,7 +5,8 @@ import json
 import re
 from urllib.parse import parse_qs
 
-from playwright.sync_api import sync_playwright
+import requests
+from bs4 import BeautifulSoup
 
 from utils import output_json, setup_logging, timestamp
 
@@ -84,25 +85,17 @@ def scrape_deck_profiles(
     log.info("Scraping deck profiles from: %s", url)
 
     try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            page = browser.new_page()
-            page.goto(url, timeout=timeout * 1000, wait_until="domcontentloaded")
-
-            # Wait for deck links to appear
-            page.wait_for_selector('a[href*="deckgen"]', timeout=15000)
-            # Give the page a moment to finish rendering all entries
-            page.wait_for_timeout(2000)
-
-            # Extract all deckgen hrefs
-            hrefs = page.eval_on_selector_all(
-                'a[href*="deckgen"]',
-                "els => els.map(el => el.href)"
-            )
-            browser.close()
-
+        resp = requests.get(url, timeout=timeout, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; OPDex/1.0)",
+        })
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        hrefs = [
+            a["href"] for a in soup.find_all("a", href=True)
+            if "deckgen" in a["href"]
+        ]
     except Exception as e:
-        log.exception("Browser scrape failed")
+        log.exception("Scrape failed")
         return {"success": False, "error": str(e), "timestamp": timestamp()}
 
     # Parse each link
