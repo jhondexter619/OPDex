@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}{{ deck.name }} &mdash; Shared Deck &mdash; OPDex{% endblock %}
+
+{% block hero %}
+<div class="hero-banner hero-detail hero-split" style="--deck-color1: {{ deck_colors[0] }}; --deck-color2: {{ deck_colors[1] }}">
+    <div class="hero-content hero-content-left">
+        <h1 class="hero-detail-title">{{ deck.name }}</h1>
+        <p class="hero-detail-subtitle">Shared deck</p>
+    </div>
+    {% if leader_code %}
+    <div class="hero-leader-art">
+        <img src="/card-image/{{ leader_code }}" alt="{{ deck.name }}" loading="eager">
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block content %}
+<a href="/" class="back-link"><span class="back-arrow">&larr;</span> Back to Meta</a>
+
+<section class="deck-header reveal">
+    <h1>{{ deck.name }}</h1>
+    {% if deck.profiles %}
+    <p class="deck-stats">Shared by {{ deck.profiles.username or 'a player' }}</p>
+    {% endif %}
+    <p class="deck-stats">{{ deck.unique_cards }} unique cards &middot; {{ deck.total_cards }} total</p>
+</section>
+
+<section class="deck-actions reveal">
+    <button class="btn btn-save" id="copyToLibraryBtn">
+        &#43; Copy to Library
+    </button>
+</section>
+<div class="save-feedback" id="saveFeedback" style="margin-bottom:1rem;text-align:left;padding-left:0.25rem;"></div>
+
+<section class="section reveal">
+    <h2>Decklist</h2>
+    <div class="card-grid stagger">
+        {% for card in deck.cards %}
+        <div class="card-item">
+            <div class="card-img-wrapper card-zoomable" data-src="/card-image/{{ card.code }}">
+                <img src="/card-image/{{ card.code }}"
+                     alt="{{ card.code }}"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="card-placeholder" style="display:none;">{{ card.code }}</div>
+                <span class="qty-badge">&times;{{ card.qty }}</span>
+            </div>
+            <span class="card-code">{{ card.code }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/supabase-deck.js') }}"></script>
+<script>
+    const STORAGE_KEY = 'opdex_library';
+    const deckData = {{ deck | tojson }};
+
+    // Copy to Library
+    document.getElementById('copyToLibraryBtn').addEventListener('click', async function () {
+        const feedback = document.getElementById('saveFeedback');
+        const cards = deckData.cards || [];
+
+        if (window.opdexAuth && opdexAuth.isLoggedIn() && window.deckStore) {
+            try {
+                await deckStore.save({ name: deckData.name, cards });
+                feedback.textContent = '\u2713 Copied to your Library!';
+                feedback.classList.add('visible');
+                setTimeout(() => feedback.classList.remove('visible'), 3000);
+            } catch (_) {
+                alert('Failed to copy deck.');
+            }
+            return;
+        }
+
+        // localStorage fallback
+        const savedDeck = {
+            id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+            name: deckData.name,
+            cards,
+            totalCards: deckData.total_cards,
+            uniqueCards: deckData.unique_cards,
+            leaderCode: deckData.leader_code,
+            savedAt: new Date().toISOString(),
+        };
+        const library = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        library.unshift(savedDeck);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(library));
+
+        feedback.textContent = '\u2713 Copied to Library!';
+        feedback.classList.add('visible');
+        setTimeout(() => feedback.classList.remove('visible'), 3000);
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    document.querySelectorAll('.card-zoomable').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', () => {
+            lightboxImg.src = el.dataset.src;
+            lightbox.classList.add('active');
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        lightboxImg.src = '';
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            lightboxImg.src = '';
+        }
+    });
+</script>
+{% endblock %}

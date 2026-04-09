@@ -352,11 +352,65 @@ body > * { position: relative; z-index: 1; }
     flex-shrink: 0;
     min-width: 90px;
 }
-/* Spacer mirrors logo width to center the tabs */
-.nav-spacer {
+/* Auth area mirrors logo width to center the tabs */
+.nav-auth {
     min-width: 90px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
 }
+.nav-signin {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+.nav-signin:hover { background: var(--border); }
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 33%;
+    border: 2px solid var(--accent);
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.nav-avatar:hover { border-color: #ff7b73; }
+.nav-username {
+    font-size: 0.75rem;
+    color: var(--text);
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nav-signout {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+.nav-signout:hover { color: var(--accent); }
 .logo-icon {
     display: block;
     margin-right: -2px;
@@ -1732,8 +1786,191 @@ body > * { position: relative; z-index: 1; }
     .deck-card { width: 90px; }
     .nav-tabs { margin: 0; }
     .nav-tab { font-size: 0.75rem; padding: 0.35rem 0.6rem; }
-    .nav-spacer { display: none; }
+    .nav-auth .nav-username { display: none; }
     .logo-icon { width: 24px; height: 28px; }
     .library-grid { grid-template-columns: 1fr; }
     .library-card-leader { width: 64px; }
+    .avatar-modal-panel { width: 95vw; max-height: 85vh; }
+    .avatar-grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
+    .admin-cards { grid-template-columns: 1fr; }
+}
+
+/* ===== Avatar Picker Modal ===== */
+.avatar-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.avatar-modal.active { display: flex; }
+.avatar-modal-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: 600px;
+    max-width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.avatar-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+.avatar-modal-header h3 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.avatar-modal-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+.avatar-modal-close:hover { color: var(--text); }
+.avatar-modal-search {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+.avatar-modal-search input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-size: 0.85rem;
+}
+.avatar-modal-search input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+.avatar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    overflow-y: auto;
+}
+.avatar-option {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+    text-align: center;
+}
+.avatar-option:hover {
+    border-color: var(--border);
+    transform: scale(1.05);
+}
+.avatar-option.selected {
+    border-color: var(--accent);
+}
+.avatar-option img {
+    width: 100%;
+    aspect-ratio: 5/7;
+    object-fit: cover;
+    display: block;
+}
+.avatar-option-name {
+    display: block;
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    padding: 2px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ===== Import Modal ===== */
+.import-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.import-modal-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    max-width: 400px;
+    text-align: center;
+}
+.import-modal-content h3 {
+    font-family: 'Cinzel', Georgia, serif;
+    margin-bottom: 0.75rem;
+}
+.import-modal-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+}
+.import-modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+/* ===== Admin Panel ===== */
+.admin-panel {
+    padding-top: 1.5rem;
+}
+.admin-panel h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    margin-bottom: 1.5rem;
+}
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.admin-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+.admin-card h3 {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+.admin-stat {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+.admin-denied {
+    text-align: center;
+    padding-top: 4rem;
+}
+.admin-denied h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    margin-bottom: 1rem;
+}
+.admin-denied p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
 }

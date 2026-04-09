@@ -11,3 +11,13 @@ services:
         value: "21600"
       - key: OPDEX_SKIP_FACE_DETECT
         value: "1"
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: OPDEX_ADMIN_EMAILS
+        sync: false

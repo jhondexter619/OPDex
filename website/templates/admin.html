@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Admin &mdash; OPDex{% endblock %}
+
+{% block content %}
+<section class="admin-panel" id="adminPanel" style="display:none">
+    <h1>Admin Dashboard</h1>
+
+    <div class="admin-cards">
+        <div class="admin-card">
+            <h3>Scraper Status</h3>
+            <p id="adminScraperStatus">Loading...</p>
+            <p id="adminLastRefresh"></p>
+            <button class="btn btn-primary" id="adminScrapeBtn">Trigger Scrape</button>
+        </div>
+        <div class="admin-card">
+            <h3>Users</h3>
+            <p class="admin-stat" id="adminUserCount">-</p>
+        </div>
+        <div class="admin-card">
+            <h3>Saved Decks</h3>
+            <p class="admin-stat" id="adminDeckCount">-</p>
+        </div>
+    </div>
+</section>
+
+<section class="admin-denied" id="adminDenied" style="display:none">
+    <h1>Access Denied</h1>
+    <p>You must be logged in as an admin to view this page.</p>
+    <a href="/" class="btn btn-primary">Back to Home</a>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+    'use strict';
+
+    const panel = document.getElementById('adminPanel');
+    const denied = document.getElementById('adminDenied');
+
+    function init() {
+        if (!window.opdexAuth || !opdexAuth.isLoggedIn()) {
+            denied.style.display = '';
+            return;
+        }
+
+        // Try loading admin stats — if 403, show denied
+        opdexAuth.fetchWithAuth('/api/admin/stats').then(async resp => {
+            if (!resp.ok) {
+                denied.style.display = '';
+                return;
+            }
+
+            panel.style.display = '';
+            const stats = await resp.json();
+
+            // Scraper status
+            const scraper = stats.scraper || {};
+            document.getElementById('adminScraperStatus').textContent =
+                'Status: ' + (scraper.status || 'unknown');
+            document.getElementById('adminLastRefresh').textContent =
+                scraper.last_refresh
+                    ? 'Last refresh: ' + scraper.last_refresh.substring(0, 16).replace('T', ' ') + ' UTC'
+                    : 'No data yet';
+
+            // Counts
+            document.getElementById('adminUserCount').textContent = stats.user_count ?? '?';
+            document.getElementById('adminDeckCount').textContent = stats.deck_count ?? '?';
+        });
+
+        // Scrape button
+        document.getElementById('adminScrapeBtn').addEventListener('click', async () => {
+            const btn = document.getElementById('adminScrapeBtn');
+            btn.textContent = 'Starting...';
+            btn.disabled = true;
+            try {
+                await opdexAuth.fetchWithAuth('/api/admin/scrape', { method: 'POST' });
+                btn.textContent = 'Scrape Started';
+            } catch (_) {
+                btn.textContent = 'Failed';
+            }
+            setTimeout(() => {
+                btn.textContent = 'Trigger Scrape';
+                btn.disabled = false;
+            }, 5000);
+        });
+    }
+
+    if (window.opdexAuth) {
+        opdexAuth.onReady(init);
+    } else {
+        denied.style.display = '';
+    }
+})();
+</script>
+{% endblock %}

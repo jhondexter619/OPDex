@@ -296,9 +296,27 @@
     // Per-card Save to Library
     // -----------------------------------------------------------------
 
-    function saveCardToLibrary(code) {
+    function useCloud() {
+        return window.opdexAuth && opdexAuth.isLoggedIn() && window.deckStore;
+    }
+
+    async function saveCardToLibrary(code) {
         const qty = deck[code] || 1;
         const name = deckNameInput.value.trim() || 'Custom Deck';
+
+        if (useCloud()) {
+            try {
+                await deckStore.save({
+                    name: `${name} — ${code}`,
+                    cards: [{ code, qty }],
+                });
+                showFeedback(`${code} ×${qty} saved to Library!`);
+            } catch (_) {
+                showFeedback('Failed to save card.');
+            }
+            return;
+        }
+
         const savedDeck = {
             id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
             name: `${name} — ${code}`,
@@ -319,22 +337,40 @@
     // Save full deck to Library
     // -----------------------------------------------------------------
 
-    saveBtn.addEventListener('click', () => {
+    saveBtn.addEventListener('click', async () => {
         const name    = deckNameInput.value.trim() || 'Custom Deck';
         const entries = Object.entries(deck);
         if (!entries.length) return;
 
+        const cards = entries.map(([code, qty]) => ({ code, qty }));
+
+        // Cloud save
+        if (useCloud()) {
+            try {
+                if (editingDeckId) {
+                    await deckStore.update(editingDeckId, { name, cards });
+                    showFeedback(`"${name}" updated in Library!`);
+                } else {
+                    const result = await deckStore.save({ name, cards });
+                    editingDeckId = result.id;
+                    showFeedback(`"${name}" saved to Library!`);
+                }
+            } catch (_) {
+                showFeedback('Failed to save deck.');
+            }
+            return;
+        }
+
+        // localStorage save
         const total      = entries.reduce((sum, [, qty]) => sum + qty, 0);
         const leaderCode = entries[0][0];
-
         const library = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 
         if (editingDeckId) {
-            // Overwrite existing deck
             const idx = library.findIndex(d => d.id === editingDeckId);
             if (idx !== -1) {
                 library[idx].name = name;
-                library[idx].cards = entries.map(([code, qty]) => ({ code, qty }));
+                library[idx].cards = cards;
                 library[idx].totalCards = total;
                 library[idx].uniqueCards = entries.length;
                 library[idx].leaderCode = leaderCode;
@@ -345,11 +381,10 @@
             }
         }
 
-        // New deck
         const savedDeck = {
             id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
             name,
-            cards: entries.map(([code, qty]) => ({ code, qty })),
+            cards,
             totalCards: total,
             uniqueCards: entries.length,
             leaderCode,
@@ -373,13 +408,31 @@
     // Load deck from URL params (used by Library "Edit" button)
     // -----------------------------------------------------------------
 
-    function loadFromParams() {
+    async function loadFromParams() {
         const params = new URLSearchParams(window.location.search);
         const loadId = params.get('load');
         if (!loadId) return;
 
-        const library = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-        const saved   = library.find(d => d.id === loadId);
+        let saved = null;
+
+        // Try cloud first if logged in
+        if (useCloud()) {
+            try {
+                const decks = await deckStore.list();
+                const match = decks.find(d => d.id === loadId);
+                if (match) {
+                    saved = { name: match.name, cards: match.cards };
+                }
+            } catch (_) {}
+        }
+
+        // Fallback to localStorage
+        if (!saved) {
+            const library = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            const match = library.find(d => d.id === loadId);
+            if (match) saved = match;
+        }
+
         if (!saved) return;
 
         editingDeckId = loadId;
@@ -390,7 +443,13 @@
     }
 
     // Auto-load cards on page open, then restore deck from URL params (library edit)
-    loadCards(setFilter.value).then(() => loadFromParams());
+    loadCards(setFilter.value).then(() => {
+        if (window.opdexAuth) {
+            opdexAuth.onReady(() => loadFromParams());
+        } else {
+            loadFromParams();
+        }
+    });
 
     // -----------------------------------------------------------------
     // Matchup Panel

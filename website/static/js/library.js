@@ -1,4 +1,4 @@
-/* OPDex — Deck Library */
+/* OPDex — Deck Library (Supabase + localStorage fallback) */
 
 (function () {
     'use strict';
@@ -9,16 +9,61 @@
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
 
-    function loadLibrary() {
+    // -----------------------------------------------------------------
+    // Storage abstraction
+    // -----------------------------------------------------------------
+
+    function loadLocal() {
         return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
     }
 
-    function saveLibrary(library) {
+    function saveLocal(library) {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(library));
     }
 
-    function render() {
-        const library = loadLibrary();
+    function useCloud() {
+        return window.opdexAuth && opdexAuth.isLoggedIn() && window.deckStore;
+    }
+
+    async function loadLibrary() {
+        if (useCloud()) {
+            const decks = await deckStore.list();
+            // Normalize Supabase shape to match localStorage shape
+            return decks.map(d => ({
+                id: d.id,
+                name: d.name,
+                cards: d.cards,
+                totalCards: d.total_cards,
+                uniqueCards: d.unique_cards,
+                leaderCode: d.leader_code,
+                savedAt: d.updated_at || d.created_at,
+                isPublic: d.is_public,
+            }));
+        }
+        return loadLocal();
+    }
+
+    async function deleteDeck(id) {
+        if (useCloud()) {
+            await deckStore.remove(id);
+        } else {
+            const lib = loadLocal().filter(d => d.id !== id);
+            saveLocal(lib);
+        }
+    }
+
+    async function togglePublic(id, isPublic) {
+        if (useCloud()) {
+            await deckStore.togglePublic(id, isPublic);
+        }
+    }
+
+    // -----------------------------------------------------------------
+    // Render
+    // -----------------------------------------------------------------
+
+    async function render() {
+        const library = await loadLibrary();
 
         if (!library.length) {
             empty.style.display = '';
@@ -26,8 +71,17 @@
         }
         empty.style.display = 'none';
 
+        const isCloud = useCloud();
+
         const html = library.map((deck, i) => {
             const date = new Date(deck.savedAt).toLocaleDateString();
+            const shareBtn = isCloud ? `
+                <button class="btn btn-sm ${deck.isPublic ? 'btn-save' : 'btn-secondary'} btn-share" data-id="${deck.id}" data-public="${deck.isPublic ? '1' : '0'}">
+                    ${deck.isPublic ? 'Shared' : 'Share'}
+                </button>
+                ${deck.isPublic ? `<button class="btn btn-sm btn-secondary btn-copy-link" data-id="${deck.id}" title="Copy link">Link</button>` : ''}
+            ` : '';
+
             return `
             <div class="library-card" style="--i:${i}">
                 <div class="library-card-leader" data-code="${deck.leaderCode}">
@@ -42,6 +96,7 @@
                 <div class="library-card-actions">
                     <a href="/builder?load=${deck.id}" class="btn btn-sm btn-primary">Edit</a>
                     <button class="btn btn-sm btn-secondary btn-pdf" data-id="${deck.id}">PDF</button>
+                    ${shareBtn}
                     <button class="btn btn-sm btn-danger btn-delete" data-id="${deck.id}">Delete</button>
                 </div>
             </div>`;
@@ -61,10 +116,8 @@
 
         // Delete buttons
         grid.querySelectorAll('.btn-delete').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const id = btn.dataset.id;
-                const lib = loadLibrary().filter(d => d.id !== id);
-                saveLibrary(lib);
+            btn.addEventListener('click', async () => {
+                await deleteDeck(btn.dataset.id);
                 render();
             });
         });
@@ -73,7 +126,7 @@
         grid.querySelectorAll('.btn-pdf').forEach(btn => {
             btn.addEventListener('click', async () => {
                 const id = btn.dataset.id;
-                const deck = loadLibrary().find(d => d.id === id);
+                const deck = library.find(d => d.id === id);
                 if (!deck) return;
 
                 btn.textContent = 'Generating\u2026';
@@ -100,6 +153,35 @@
 
                 btn.textContent = 'PDF';
                 btn.disabled = false;
+            });
+        });
+
+        // Share toggle buttons
+        grid.querySelectorAll('.btn-share').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const id = btn.dataset.id;
+                const currentlyPublic = btn.dataset.public === '1';
+                const newState = !currentlyPublic;
+
+                btn.disabled = true;
+                try {
+                    await togglePublic(id, newState);
+                    render();
+                } catch (e) {
+                    alert('Failed to update sharing.');
+                    btn.disabled = false;
+                }
+            });
+        });
+
+        // Copy link buttons
+        grid.querySelectorAll('.btn-copy-link').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const url = window.location.origin + '/shared/' + btn.dataset.id;
+                navigator.clipboard.writeText(url).then(() => {
+                    btn.textContent = 'Copied!';
+                    setTimeout(() => { btn.textContent = 'Link'; }, 1500);
+                });
             });
         });
 
@@ -130,5 +212,10 @@
         }
     });
 
-    render();
+    // Wait for auth to be ready, then render
+    if (window.opdexAuth) {
+        opdexAuth.onReady(() => render());
+    } else {
+        render();
+    }
 })();

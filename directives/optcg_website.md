@@ -68,3 +68,5 @@ OPDEX_FORMAT_SLUGS="japan-op-15-deck-list-adventure-on-kamis-island,japan-op-14-
 - Chart.js loaded via CDN (no build step needed)
 - Flask debug reloader spawns two processes — scraper only starts in the child process (checks `WERKZEUG_RUN_MAIN`)
 - Matchup outlook uses average placement scores as a heuristic — not true head-to-head data
+- Render free tier suspends idle services, killing the background scraper thread. On restart, data can be days stale. Fixed by checking data age on startup and re-scraping if older than SCRAPE_INTERVAL (instead of only scraping when no data exists at all).
+- The source site (onepiecetopdecks.com) caps visible decks at ~100 per format page. As new tournament results are added, older ones roll off. Frequent scraping ensures we capture everything.

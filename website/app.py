@@ -20,7 +20,8 @@ from urllib.parse import unquote
 
 import cv2
 import numpy as np
-from flask import Flask, abort, jsonify, redirect, render_template, request, send_file, url_for
+from flask import Flask, abort, g, jsonify, redirect, render_template, request, send_file, url_for
+from supabase import create_client as supabase_create_client
 
 # Add execution/ to path so we can import existing scripts
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,6 +31,19 @@ from optcg_deck_pdf import create_pdf, load_card_image, upscale_image
 from optcg_deck_scraper import scrape_deck_profiles
 
 app = Flask(__name__)
+
+# ---------------------------------------------------------------------------
+# Supabase server-side client
+# ---------------------------------------------------------------------------
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
+SUPABASE_ANON_KEY = os.environ.get("SUPABASE_ANON_KEY", "")
+SUPABASE_SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
+
+_sb = None
+if SUPABASE_URL and SUPABASE_SERVICE_KEY:
+    _sb = supabase_create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
+
+from auth import require_admin, require_auth  # noqa: E402
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 ASSETS_DIR = ROOT / "OPTCG CARD ASSETS"
@@ -125,18 +139,25 @@ def _run_scrape():
 
 
 def _scrape_loop():
-    """Background loop: scrape immediately, then every SCRAPE_INTERVAL seconds."""
-    # Initial scrape only if no data exists
-    if not any(DATA_DIR.glob("meta_*.json")) if DATA_DIR.exists() else True:
+    """Background loop: scrape on startup if data is stale, then every SCRAPE_INTERVAL."""
+    existing = sorted(DATA_DIR.glob("meta_*.json"), key=lambda f: f.stat().st_mtime) if DATA_DIR.exists() else []
+
+    if not existing:
         log.info("No existing data found — running initial scrape")
         _run_scrape()
     else:
-        log.info("Existing data found — skipping initial scrape")
-        # Set last_refresh from the most recent file's mtime
-        latest = max(DATA_DIR.glob("meta_*.json"), key=lambda f: f.stat().st_mtime)
+        latest = existing[-1]
+        age_secs = time.time() - latest.stat().st_mtime
         _scraper_state["last_refresh"] = datetime.fromtimestamp(
             latest.stat().st_mtime, tz=timezone.utc,
         ).isoformat()
+        if age_secs > SCRAPE_INTERVAL:
+            log.info("Data is %.1f hours old (> %d min interval) — refreshing now",
+                     age_secs / 3600, SCRAPE_INTERVAL // 60)
+            _run_scrape()
+        else:
+            log.info("Existing data is fresh (%.1f min old) — skipping initial scrape",
+                     age_secs / 60)
 
     while True:
         _scraper_state["next_refresh"] = datetime.fromtimestamp(
@@ -896,9 +917,232 @@ def manual_refresh():
 
 
 @app.context_processor
-def inject_scraper_state():
-    """Make scraper state available to all templates."""
-    return {"scraper": _scraper_state, "scrape_interval_min": SCRAPE_INTERVAL // 60}
+def inject_globals():
+    """Make scraper state and Supabase config available to all templates."""
+    return {
+        "scraper": _scraper_state,
+        "scrape_interval_min": SCRAPE_INTERVAL // 60,
+        "supabase_url": SUPABASE_URL,
+        "supabase_anon_key": SUPABASE_ANON_KEY,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Auth API routes
+# ---------------------------------------------------------------------------
+
+@app.route("/api/profile", methods=["GET"])
+@require_auth
+def api_profile_get():
+    """Get the current user's profile."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    result = _sb.table("profiles").select("*").eq("id", g.user_id).single().execute()
+    if result.data:
+        return jsonify(result.data)
+    return jsonify({"error": "Profile not found"}), 404
+
+
+@app.route("/api/profile", methods=["PUT"])
+@require_auth
+def api_profile_update():
+    """Update the current user's profile (avatar, username)."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    data = request.get_json()
+    updates = {}
+    if "avatar_leader_code" in data:
+        updates["avatar_leader_code"] = data["avatar_leader_code"]
+    if "username" in data:
+        updates["username"] = data["username"]
+    if not updates:
+        return jsonify({"error": "Nothing to update"}), 400
+    result = _sb.table("profiles").update(updates).eq("id", g.user_id).execute()
+    return jsonify(result.data[0] if result.data else {})
+
+
+@app.route("/api/leaders")
+def api_leaders():
+    """Return all Leader-type cards from the card database."""
+    meta = _load_card_meta()
+    leaders = [
+        {"code": code, "name": info.get("name", code), "color": info.get("color", "")}
+        for code, info in meta.items()
+        if info.get("type") == "Leader"
+    ]
+    leaders.sort(key=lambda l: l["code"])
+    return jsonify(leaders)
+
+
+# ---------------------------------------------------------------------------
+# Deck CRUD API routes
+# ---------------------------------------------------------------------------
+
+@app.route("/api/decks", methods=["GET"])
+@require_auth
+def api_list_decks():
+    """List all decks for the current user."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    result = _sb.table("decks").select("*").eq("user_id", g.user_id).order(
+        "updated_at", desc=True,
+    ).execute()
+    return jsonify(result.data or [])
+
+
+@app.route("/api/decks", methods=["POST"])
+@require_auth
+def api_create_deck():
+    """Create a new deck for the current user."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    data = request.get_json()
+    if not data or not data.get("cards"):
+        return jsonify({"error": "Missing cards"}), 400
+
+    cards = data["cards"]
+    deck_row = {
+        "user_id": g.user_id,
+        "name": data.get("name", "Custom Deck"),
+        "cards": cards,
+        "total_cards": sum(c.get("qty", 1) for c in cards),
+        "unique_cards": len(cards),
+        "leader_code": cards[0]["code"] if cards else None,
+        "is_public": data.get("is_public", False),
+    }
+    result = _sb.table("decks").insert(deck_row).execute()
+    return jsonify(result.data[0] if result.data else {}), 201
+
+
+@app.route("/api/decks/<deck_id>", methods=["PUT"])
+@require_auth
+def api_update_deck(deck_id):
+    """Update an existing deck (must be owned by the user)."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    data = request.get_json()
+    updates = {}
+    if "name" in data:
+        updates["name"] = data["name"]
+    if "cards" in data:
+        cards = data["cards"]
+        updates["cards"] = cards
+        updates["total_cards"] = sum(c.get("qty", 1) for c in cards)
+        updates["unique_cards"] = len(cards)
+        updates["leader_code"] = cards[0]["code"] if cards else None
+    if "is_public" in data:
+        updates["is_public"] = data["is_public"]
+    if not updates:
+        return jsonify({"error": "Nothing to update"}), 400
+
+    updates["updated_at"] = datetime.now(timezone.utc).isoformat()
+    result = _sb.table("decks").update(updates).eq("id", deck_id).eq(
+        "user_id", g.user_id,
+    ).execute()
+    if not result.data:
+        return jsonify({"error": "Deck not found"}), 404
+    return jsonify(result.data[0])
+
+
+@app.route("/api/decks/<deck_id>", methods=["DELETE"])
+@require_auth
+def api_delete_deck(deck_id):
+    """Delete a deck (must be owned by the user)."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    _sb.table("decks").delete().eq("id", deck_id).eq("user_id", g.user_id).execute()
+    return jsonify({"ok": True})
+
+
+@app.route("/api/decks/import", methods=["POST"])
+@require_auth
+def api_import_decks():
+    """Batch import decks from localStorage."""
+    if not _sb:
+        return jsonify({"error": "Supabase not configured"}), 503
+    data = request.get_json()
+    decks = data.get("decks", [])
+    if not decks:
+        return jsonify({"error": "No decks to import"}), 400
+
+    rows = []
+    for d in decks:
+        cards = d.get("cards", [])
+        rows.append({
+            "user_id": g.user_id,
+            "name": d.get("name", "Imported Deck"),
+            "cards": cards,
+            "total_cards": d.get("totalCards", sum(c.get("qty", 1) for c in cards)),
+            "unique_cards": d.get("uniqueCards", len(cards)),
+            "leader_code": d.get("leaderCode", cards[0]["code"] if cards else None),
+            "is_public": False,
+        })
+
+    result = _sb.table("decks").insert(rows).execute()
+    return jsonify({"imported": len(result.data or [])})
+
+
+# ---------------------------------------------------------------------------
+# Shared decks
+# ---------------------------------------------------------------------------
+
+@app.route("/shared/<deck_id>")
+def shared_deck(deck_id):
+    """View a publicly shared deck."""
+    if not _sb:
+        abort(503)
+    result = _sb.table("decks").select("*, profiles(username, avatar_leader_code)").eq(
+        "id", deck_id,
+    ).eq("is_public", True).single().execute()
+    if not result.data:
+        abort(404)
+    deck = result.data
+    # Resolve colors
+    leader_code = deck.get("leader_code")
+    leader_color = ""
+    if leader_code:
+        leader_color = _load_card_meta().get(leader_code, {}).get("color", "")
+    deck_colors = _resolve_deck_colors(deck.get("name", ""), leader_color)
+    return render_template("shared.html", deck=deck, deck_colors=deck_colors, leader_code=leader_code)
+
+
+# ---------------------------------------------------------------------------
+# Admin panel
+# ---------------------------------------------------------------------------
+
+@app.route("/admin")
+def admin_page():
+    """Admin dashboard page."""
+    return render_template("admin.html")
+
+
+@app.route("/api/admin/scrape", methods=["POST"])
+@require_auth
+@require_admin
+def admin_trigger_scrape():
+    """Trigger an immediate scrape (admin only)."""
+    if _scraper_state["status"] == "scraping":
+        return jsonify({"message": "Already scraping"}), 409
+    threading.Thread(target=_run_scrape, daemon=True, name="opdex-admin").start()
+    return jsonify({"message": "Scrape started"})
+
+
+@app.route("/api/admin/stats")
+@require_auth
+@require_admin
+def admin_stats():
+    """Return admin statistics."""
+    stats = {"scraper": _scraper_state}
+    if _sb:
+        try:
+            users = _sb.table("profiles").select("id", count="exact").execute()
+            decks = _sb.table("decks").select("id", count="exact").execute()
+            stats["user_count"] = users.count
+            stats["deck_count"] = decks.count
+        except Exception:
+            stats["user_count"] = "?"
+            stats["deck_count"] = "?"
+    return jsonify(stats)
 
 
 # ---------------------------------------------------------------------------
