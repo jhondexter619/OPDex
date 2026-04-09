@@ -2,7 +2,7 @@ services:
   - type: web
     name: opdex
     runtime: python
-    buildCommand: git lfs install && git lfs pull && pip install -r requirements.txt
+    buildCommand: git lfs install && git lfs pull && pip install -r requirements.txt && playwright install --with-deps chromium
     startCommand: gunicorn website.app:app --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120
     envVars:
       - key: PYTHON_VERSION
