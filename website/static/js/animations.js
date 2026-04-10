@@ -25,16 +25,33 @@
     // -----------------------------------------------------------------
     // Stagger children — assign --i custom property + trigger play
     // -----------------------------------------------------------------
+    // Cap total stagger duration so large lists (e.g. 300+ deck rows) finish
+    // animating in ~1s instead of ~10s. Each row's animation-delay is set
+    // inline so we don't depend on the CSS `--i * 30ms` formula.
+    const MAX_STAGGER_DURATION_MS = 1000;
+    const DEFAULT_STEP_MS = 30;
+
     function initStagger(parent) {
         const children = parent.tagName === 'TBODY'
             ? parent.querySelectorAll('tr')
             : parent.children;
+        const arr = Array.from(children);
+        if (!arr.length) return;
 
-        Array.from(children).forEach((child, i) => {
+        // Step shrinks for larger lists so total stagger never exceeds the cap
+        const step = Math.min(DEFAULT_STEP_MS, MAX_STAGGER_DURATION_MS / arr.length);
+
+        arr.forEach((child, i) => {
             child.style.setProperty('--i', i);
+            child.style.animationDelay = (i * step) + 'ms';
         });
     }
 
+    // threshold:0 + small negative rootMargin → fires the moment any pixel
+    // of the container enters the viewport. The previous threshold of 0.05
+    // required 5% of the *target's* area to be visible, which a 15,000px
+    // tall tbody can never reach inside an 800px viewport, leaving every
+    // row stuck at opacity:0 forever.
     const staggerObserver = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
@@ -45,7 +62,7 @@
                 }
             });
         },
-        { threshold: 0.05 }
+        { threshold: 0, rootMargin: '0px 0px -5% 0px' }
     );
 
     document.querySelectorAll('.stagger, .stagger-rows').forEach((el) => {

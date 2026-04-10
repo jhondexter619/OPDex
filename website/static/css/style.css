@@ -508,7 +508,7 @@ body > * { position: relative; z-index: 1; }
 }
 .stagger-rows.animated > tr {
     animation-play-state: running;
-    animation-delay: calc(var(--i, 0) * 30ms);
+    /* JS sets per-row animation-delay inline so total stagger duration is capped */
 }
 
 /* ===== Stats Row ===== */
