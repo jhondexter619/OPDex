@@ -6,7 +6,10 @@ Pillow>=10.0.0
 fpdf2>=2.7.0
 opencv-python-headless>=4.8.0,<4.13.0
 numpy>=1.24.0
-playwright>=1.40.0
+# playwright is only needed by offline data-prep scripts (optcg_card_meta.py,
+# optcg_leader_art.py) — install manually with `pip install playwright` and
+# `playwright install chromium` when running them. Not needed at runtime; the
+# chromium binary is ~200MB which busts the free-tier memory budget.
 flask>=3.0.0
 gunicorn>=21.2.0
 PyJWT>=2.8.0
