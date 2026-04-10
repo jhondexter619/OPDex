@@ -33,7 +33,13 @@
 {% if matchups.threats or matchups.favorable %}
 <section class="section matchup-section reveal">
     <h2>Matchup Outlook</h2>
-    <p class="matchup-note">Based on average tournament placement across all tracked results.</p>
+    <p class="matchup-note">
+        {% if matchups.source == "limitless" %}
+            Real head-to-head win rates from <a href="https://play.limitlesstcg.com/decks?game=OP" target="_blank" rel="noopener">Limitless TCG</a> tournament results{% if matchups.format %} &middot; {{ matchups.format }} format{% endif %}.
+        {% else %}
+            Estimated from average tournament placement (no head-to-head data yet for this archetype).
+        {% endif %}
+    </p>
     <div class="matchup-grid">
         {% if matchups.threats %}
         <div class="matchup-col">
@@ -48,7 +54,11 @@
                 {% endif %}
                 <div class="matchup-info">
                     <span class="matchup-name">{{ t.name }}</span>
+                    {% if t.win_pct is defined %}
+                    <span class="matchup-stat"><strong class="wp-bad">{{ "%.0f"|format(t.win_pct) }}%</strong> &middot; {{ t.matches }} games</span>
+                    {% else %}
                     <span class="matchup-stat">avg {{ t.avg_placement }} &middot; {{ t.count }} decks</span>
+                    {% endif %}
                 </div>
             </a>
             {% endfor %}
@@ -67,7 +77,11 @@
                 {% endif %}
                 <div class="matchup-info">
                     <span class="matchup-name">{{ f.name }}</span>
+                    {% if f.win_pct is defined %}
+                    <span class="matchup-stat"><strong class="wp-good">{{ "%.0f"|format(f.win_pct) }}%</strong> &middot; {{ f.matches }} games</span>
+                    {% else %}
                     <span class="matchup-stat">avg {{ f.avg_placement }} &middot; {{ f.count }} decks</span>
+                    {% endif %}
                 </div>
             </a>
             {% endfor %}

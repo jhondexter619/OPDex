@@ -29,6 +29,7 @@ sys.path.insert(0, str(ROOT / "execution"))
 
 from optcg_deck_pdf import create_pdf, load_card_image, upscale_image
 from optcg_deck_scraper import scrape_deck_profiles
+from scrape_limitless_matchups import scrape_all as scrape_limitless_matchups
 
 app = Flask(__name__)
 
@@ -67,6 +68,11 @@ FORMAT_SLUGS = os.environ.get(
 
 # Max data files to keep (older ones are cleaned up)
 MAX_DATA_FILES = 10
+MAX_MATCHUP_FILES = 5
+
+# Min head-to-head sample size before showing a real matchup (else fall back
+# to placement-score proxy). Tunable via env var.
+MATCHUP_MIN_SAMPLE = int(os.environ.get("OPDEX_MATCHUP_MIN_SAMPLE", 30))
 
 # Scraper state (visible to templates via context processor)
 _scraper_state = {
@@ -135,13 +141,51 @@ def _run_scrape():
         removed.unlink()
         log.info("Cleaned up old data file: %s", removed.name)
 
+    # Then refresh Limitless H2H matchup data (separate source, same cadence)
+    _run_matchup_scrape()
+
     _scraper_state["status"] = "idle"
     _scraper_state["last_refresh"] = datetime.now(timezone.utc).isoformat()
+
+
+def _run_matchup_scrape():
+    """Scrape head-to-head matchup win-rates from Limitless TCG."""
+    log.info("Limitless matchup scrape starting")
+    try:
+        result = scrape_limitless_matchups(rate_delay=1.0, timeout=45)
+    except Exception as e:
+        log.error("Limitless matchup scrape crashed: %s", e)
+        return
+
+    if not result.get("success") or not result.get("matchups"):
+        log.warning("Limitless matchup scrape returned no data: %s",
+                    result.get("error", "unknown"))
+        return
+
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    out_path = DATA_DIR / f"matchups_{ts}.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, default=str)
+    log.info("Limitless matchup scrape complete: %d leaders, format=%s → %s",
+             result.get("total_leaders", 0), result.get("format", "?"), out_path.name)
+
+    # Clean up old matchup files
+    old = sorted(DATA_DIR.glob("matchups_*.json"), key=lambda f: f.stat().st_mtime)
+    while len(old) > MAX_MATCHUP_FILES:
+        removed = old.pop(0)
+        removed.unlink()
+        log.info("Cleaned up old matchup file: %s", removed.name)
+
+    # Bust the in-memory cache so the next request loads the new file
+    global _matchup_cache
+    _matchup_cache = None
 
 
 def _scrape_loop():
     """Background loop: scrape on startup if data is stale, then every SCRAPE_INTERVAL."""
     existing = sorted(DATA_DIR.glob("meta_*.json"), key=lambda f: f.stat().st_mtime) if DATA_DIR.exists() else []
+    matchup_existing = sorted(DATA_DIR.glob("matchups_*.json"), key=lambda f: f.stat().st_mtime) if DATA_DIR.exists() else []
 
     if not existing:
         log.info("No existing data found — running initial scrape")
@@ -159,6 +203,17 @@ def _scrape_loop():
         else:
             log.info("Existing data is fresh (%.1f min old) — skipping initial scrape",
                      age_secs / 60)
+            # Deck data is fresh, but matchup data has its own staleness check
+            if not matchup_existing:
+                log.info("No existing matchup data — running initial Limitless scrape")
+                _run_matchup_scrape()
+            else:
+                m_age = time.time() - matchup_existing[-1].stat().st_mtime
+                if m_age > SCRAPE_INTERVAL:
+                    log.info("Matchup data is %.1f hours old — refreshing now", m_age / 3600)
+                    _run_matchup_scrape()
+                else:
+                    log.info("Existing matchup data is fresh (%.1f min old)", m_age / 60)
 
     while True:
         _scraper_state["next_refresh"] = datetime.fromtimestamp(
@@ -193,6 +248,39 @@ def load_data():
         return None
     with open(json_files[0], encoding="utf-8") as f:
         return json.load(f)
+
+
+# In-memory cache for the latest Limitless matchup data
+_matchup_cache: dict | None = None
+_matchup_cache_mtime: float = 0.0
+
+
+def load_matchups() -> dict | None:
+    """Load the most recent Limitless matchups JSON from website/data/.
+
+    Cached in memory and invalidated when a newer file appears on disk.
+    """
+    global _matchup_cache, _matchup_cache_mtime
+    if not DATA_DIR.exists():
+        return None
+    files = sorted(
+        DATA_DIR.glob("matchups_*.json"),
+        key=lambda f: f.stat().st_mtime,
+        reverse=True,
+    )
+    if not files:
+        return None
+    latest = files[0]
+    mtime = latest.stat().st_mtime
+    if _matchup_cache is None or mtime > _matchup_cache_mtime:
+        with open(latest, encoding="utf-8") as f:
+            _matchup_cache = json.load(f)
+        _matchup_cache_mtime = mtime
+        log.info("Loaded matchup data: %s (%d leaders, format=%s)",
+                 latest.name,
+                 _matchup_cache.get("total_leaders", 0),
+                 _matchup_cache.get("format", "?"))
+    return _matchup_cache
 
 
 def _placement_score(placement: str) -> int:
@@ -413,11 +501,11 @@ def compute_meta(data):
     }
 
 
-def compute_matchups(deck_name: str, archetypes: list) -> dict:
-    """Estimate threats and favorable matchups based on avg placement scores."""
+def _compute_matchups_fallback(deck_name: str, archetypes: list) -> dict:
+    """Placement-score proxy used when H2H data is unavailable for an archetype."""
     current = next((a for a in archetypes if a["name"] == deck_name), None)
     if not current:
-        return {"threats": [], "favorable": []}
+        return {"threats": [], "favorable": [], "source": "none", "format": ""}
 
     current_score = current["avg_placement"]
     others = [a for a in archetypes if a["name"] != deck_name and a["count"] >= 2]
@@ -425,13 +513,90 @@ def compute_matchups(deck_name: str, archetypes: list) -> dict:
     threats = sorted(
         [a for a in others if a["avg_placement"] < current_score],
         key=lambda a: a["avg_placement"],
-    )[:5]
+    )[:4]
     favorable = sorted(
         [a for a in others if a["avg_placement"] > current_score],
         key=lambda a: -a["avg_placement"],
-    )[:5]
+    )[:4]
 
-    return {"threats": threats, "favorable": favorable}
+    return {"threats": threats, "favorable": favorable, "source": "placement", "format": ""}
+
+
+def compute_matchups(deck_name: str, archetypes: list) -> dict:
+    """Build threats/favorable matchups for a deck.
+
+    Prefers real head-to-head win rates from Limitless TCG (joined by leader code).
+    Falls back to the placement-score proxy when:
+      - the local archetype has no leader code
+      - no Limitless data file exists yet
+      - the archetype has no entry in the Limitless data
+      - no opponent meets the minimum sample size
+    """
+    current = next((a for a in archetypes if a["name"] == deck_name), None)
+    if not current:
+        return {"threats": [], "favorable": [], "source": "none", "format": ""}
+
+    leader_code = current.get("leader_code")
+    matchup_data = load_matchups() if leader_code else None
+    leader_matches = (
+        matchup_data.get("matchups", {}).get(leader_code) if matchup_data else None
+    )
+    if not leader_matches:
+        return _compute_matchups_fallback(deck_name, archetypes)
+
+    # Index local archetypes by leader_code so we can attach name/colors/etc.
+    by_code: dict[str, dict] = {}
+    for a in archetypes:
+        if a.get("leader_code"):
+            by_code.setdefault(a["leader_code"], a)
+
+    threats: list[dict] = []
+    favorable: list[dict] = []
+
+    for opp_code, row in leader_matches.items():
+        if opp_code == leader_code:
+            continue
+        if row.get("matches", 0) < MATCHUP_MIN_SAMPLE:
+            continue
+
+        opp_archetype = by_code.get(opp_code)
+        if opp_archetype:
+            entry = {
+                "name": opp_archetype["name"],
+                "leader_code": opp_code,
+                "avg_placement": opp_archetype.get("avg_placement", 0),
+                "count": opp_archetype.get("count", 0),
+                "win_pct": row["win_pct"],
+                "matches": row["matches"],
+            }
+        else:
+            # Opponent isn't in our local meta — still show it, using Limitless name
+            entry = {
+                "name": row.get("opponent_name") or opp_code,
+                "leader_code": opp_code,
+                "avg_placement": 0,
+                "count": 0,
+                "win_pct": row["win_pct"],
+                "matches": row["matches"],
+            }
+
+        if row["win_pct"] < 50:
+            threats.append(entry)
+        elif row["win_pct"] > 50:
+            favorable.append(entry)
+
+    if not threats and not favorable:
+        return _compute_matchups_fallback(deck_name, archetypes)
+
+    threats.sort(key=lambda e: (e["win_pct"], -e["matches"]))
+    favorable.sort(key=lambda e: (-e["win_pct"], -e["matches"]))
+
+    return {
+        "threats": threats[:4],
+        "favorable": favorable[:4],
+        "source": "limitless",
+        "format": (matchup_data or {}).get("format", ""),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -715,6 +880,7 @@ def download_pdf(idx):
     tmp = tempfile.NamedTemporaryFile(
         suffix=".pdf", delete=False, prefix=f"OPTCG_{deck_name}_",
     )
+    tmp.close()
     create_pdf(processed, tmp.name)
 
     safe_name = re.sub(r'[<>:"/\\|?*]', "", deck_name).strip()
@@ -882,6 +1048,7 @@ def build_pdf():
     tmp = tempfile.NamedTemporaryFile(
         suffix=".pdf", delete=False, prefix="OPTCG_build_",
     )
+    tmp.close()
     create_pdf(processed, tmp.name)
 
     safe_name = re.sub(r'[<>:"/\\|?*]', "", deck_name).strip() or "Deck"
