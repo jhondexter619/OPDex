@@ -135,7 +135,7 @@ def _run_scrape():
     log.info("Auto-scrape complete: %d decks → %s", len(all_decks), out_path.name)
 
     # Clean up old data files, keep the most recent MAX_DATA_FILES
-    old_files = sorted(DATA_DIR.glob("meta_*.json"), key=lambda f: f.stat().st_mtime)
+    old_files = sorted(DATA_DIR.glob("meta_*.json"), key=_file_timestamp)
     while len(old_files) > MAX_DATA_FILES:
         removed = old_files.pop(0)
         removed.unlink()
@@ -171,49 +171,83 @@ def _run_matchup_scrape():
              result.get("total_leaders", 0), result.get("format", "?"), out_path.name)
 
     # Clean up old matchup files
-    old = sorted(DATA_DIR.glob("matchups_*.json"), key=lambda f: f.stat().st_mtime)
+    old = sorted(DATA_DIR.glob("matchups_*.json"), key=_file_timestamp)
     while len(old) > MAX_MATCHUP_FILES:
         removed = old.pop(0)
         removed.unlink()
         log.info("Cleaned up old matchup file: %s", removed.name)
 
     # Bust the in-memory cache so the next request loads the new file
-    global _matchup_cache
+    global _matchup_cache, _matchup_cache_path
     _matchup_cache = None
+    _matchup_cache_path = ""
+
+
+_TS_FROM_NAME_RE = re.compile(r"_(\d{8})_(\d{6})\.json$")
+
+
+def _file_timestamp(path: Path) -> float:
+    """Extract a UNIX timestamp from a `*_YYYYMMDD_HHMMSS.json` filename.
+
+    Filename-derived time is the source of truth — file mtime is unreliable
+    on ephemeral filesystems (Render wipes them on every deploy and a fresh
+    git checkout gives every committed file the same checkout-time mtime).
+    Falls back to mtime if the filename pattern doesn't match.
+    """
+    m = _TS_FROM_NAME_RE.search(path.name)
+    if not m:
+        return path.stat().st_mtime
+    try:
+        dt = datetime.strptime(m.group(1) + m.group(2), "%Y%m%d%H%M%S")
+        return dt.replace(tzinfo=timezone.utc).timestamp()
+    except ValueError:
+        return path.stat().st_mtime
+
+
+def _latest_file(pattern: str) -> Path | None:
+    """Return the newest file matching `pattern` in DATA_DIR, by filename timestamp."""
+    if not DATA_DIR.exists():
+        return None
+    files = list(DATA_DIR.glob(pattern))
+    if not files:
+        return None
+    return max(files, key=_file_timestamp)
 
 
 def _scrape_loop():
     """Background loop: scrape on startup if data is stale, then every SCRAPE_INTERVAL."""
-    existing = sorted(DATA_DIR.glob("meta_*.json"), key=lambda f: f.stat().st_mtime) if DATA_DIR.exists() else []
-    matchup_existing = sorted(DATA_DIR.glob("matchups_*.json"), key=lambda f: f.stat().st_mtime) if DATA_DIR.exists() else []
+    latest = _latest_file("meta_*.json")
+    matchup_latest = _latest_file("matchups_*.json")
 
-    if not existing:
+    if latest is None:
         log.info("No existing data found — running initial scrape")
         _run_scrape()
     else:
-        latest = existing[-1]
-        age_secs = time.time() - latest.stat().st_mtime
+        latest_ts = _file_timestamp(latest)
+        age_secs = time.time() - latest_ts
         _scraper_state["last_refresh"] = datetime.fromtimestamp(
-            latest.stat().st_mtime, tz=timezone.utc,
+            latest_ts, tz=timezone.utc,
         ).isoformat()
         if age_secs > SCRAPE_INTERVAL:
-            log.info("Data is %.1f hours old (> %d min interval) — refreshing now",
-                     age_secs / 3600, SCRAPE_INTERVAL // 60)
+            log.info("Data %s is %.1f hours old (> %d min interval) — refreshing now",
+                     latest.name, age_secs / 3600, SCRAPE_INTERVAL // 60)
             _run_scrape()
         else:
-            log.info("Existing data is fresh (%.1f min old) — skipping initial scrape",
-                     age_secs / 60)
+            log.info("Existing data %s is fresh (%.1f min old) — skipping initial scrape",
+                     latest.name, age_secs / 60)
             # Deck data is fresh, but matchup data has its own staleness check
-            if not matchup_existing:
+            if matchup_latest is None:
                 log.info("No existing matchup data — running initial Limitless scrape")
                 _run_matchup_scrape()
             else:
-                m_age = time.time() - matchup_existing[-1].stat().st_mtime
+                m_age = time.time() - _file_timestamp(matchup_latest)
                 if m_age > SCRAPE_INTERVAL:
-                    log.info("Matchup data is %.1f hours old — refreshing now", m_age / 3600)
+                    log.info("Matchup data %s is %.1f hours old — refreshing now",
+                             matchup_latest.name, m_age / 3600)
                     _run_matchup_scrape()
                 else:
-                    log.info("Existing matchup data is fresh (%.1f min old)", m_age / 60)
+                    log.info("Existing matchup data %s is fresh (%.1f min old)",
+                             matchup_latest.name, m_age / 60)
 
     while True:
         _scraper_state["next_refresh"] = datetime.fromtimestamp(
@@ -236,46 +270,38 @@ def start_scraper():
 # ---------------------------------------------------------------------------
 
 def load_data():
-    """Load the most recent scraped meta data JSON from website/data/."""
-    if not DATA_DIR.exists():
+    """Load the most recent scraped meta data JSON from website/data/.
+
+    Picks the file with the newest filename timestamp, NOT mtime — Render's
+    ephemeral filesystem resets all committed-file mtimes on every deploy,
+    so mtime sorting silently picks an arbitrary committed file.
+    """
+    latest = _latest_file("meta_*.json")
+    if latest is None:
         return None
-    json_files = sorted(
-        DATA_DIR.glob("meta_*.json"),
-        key=lambda f: f.stat().st_mtime,
-        reverse=True,
-    )
-    if not json_files:
-        return None
-    with open(json_files[0], encoding="utf-8") as f:
+    with open(latest, encoding="utf-8") as f:
         return json.load(f)
 
 
 # In-memory cache for the latest Limitless matchup data
 _matchup_cache: dict | None = None
-_matchup_cache_mtime: float = 0.0
+_matchup_cache_path: str = ""
 
 
 def load_matchups() -> dict | None:
     """Load the most recent Limitless matchups JSON from website/data/.
 
-    Cached in memory and invalidated when a newer file appears on disk.
+    Cached in memory; invalidated when a newer-named file appears on disk.
+    Selection uses filename timestamp (see load_data for why).
     """
-    global _matchup_cache, _matchup_cache_mtime
-    if not DATA_DIR.exists():
+    global _matchup_cache, _matchup_cache_path
+    latest = _latest_file("matchups_*.json")
+    if latest is None:
         return None
-    files = sorted(
-        DATA_DIR.glob("matchups_*.json"),
-        key=lambda f: f.stat().st_mtime,
-        reverse=True,
-    )
-    if not files:
-        return None
-    latest = files[0]
-    mtime = latest.stat().st_mtime
-    if _matchup_cache is None or mtime > _matchup_cache_mtime:
+    if _matchup_cache is None or latest.name != _matchup_cache_path:
         with open(latest, encoding="utf-8") as f:
             _matchup_cache = json.load(f)
-        _matchup_cache_mtime = mtime
+        _matchup_cache_path = latest.name
         log.info("Loaded matchup data: %s (%d leaders, format=%s)",
                  latest.name,
                  _matchup_cache.get("total_leaders", 0),
