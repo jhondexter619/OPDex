@@ -6,6 +6,12 @@
     // -----------------------------------------------------------------
     // Intersection Observer — reveal sections on scroll
     // -----------------------------------------------------------------
+    // threshold:0 + small negative rootMargin → fires the moment any pixel
+    // of the section enters the viewport. The previous threshold of 0.08
+    // required 8% of the section's bounding box to be visible — which a
+    // section containing a 15,000+ px deck table can never reach inside an
+    // 800px viewport (max visible ratio ~5%). The whole section was stuck
+    // at opacity:0 and every row inside was invisible-but-clickable.
     const revealObserver = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
@@ -15,7 +21,7 @@
                 }
             });
         },
-        { threshold: 0.08 }
+        { threshold: 0, rootMargin: '0px 0px -5% 0px' }
     );
 
     document.querySelectorAll('.reveal').forEach((el) => {
